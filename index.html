@@ -1,4 +1,4 @@
-<title>Tumorkonferenz Gynäkologie</title>
+﻿<title>Tumorkonferenz GynÃ¤kologie</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,7 +83,7 @@ nav#nav-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:10
 .rsec-title{font-family:'Inter',sans-serif;font-weight:800;font-size:14px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
 .ritem{font-size:13px;line-height:1.55;padding:4px 0 4px 14px;border-bottom:1px solid rgba(255,255,255,.25);position:relative}
 .ritem:last-child{border-bottom:none}
-.ritem::before{content:'›';position:absolute;left:0;font-weight:800;opacity:.7}
+.ritem::before{content:'â€º';position:absolute;left:0;font-weight:800;opacity:.7}
 .pbox{background:rgba(255,255,255,.35);border-radius:8px;padding:9px 10px;margin-top:8px}
 .pname{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:11px;opacity:.85;margin-bottom:4px}
 .pdet{font-size:11.5px;line-height:1.55;opacity:.9}
@@ -153,16 +153,16 @@ nav#nav-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:10
 <!-- Disclaimer overlay -->
 <div id="disc-overlay" class="disc-overlay">
   <div class="disc-sheet">
-    <h3>⚠️ Medizinischer Disclaimer</h3>
-    <p><strong>Dieses Tool dient ausschließlich als Entscheidungshilfe</strong> für klinische Tumorkonferenzen und ist kein Ersatz für die individuelle ärztliche Beurteilung.</p>
+    <h3>âš ï¸ Medizinischer Disclaimer</h3>
+    <p><strong>Dieses Tool dient ausschlieÃŸlich als Entscheidungshilfe</strong> fÃ¼r klinische Tumorkonferenzen und ist kein Ersatz fÃ¼r die individuelle Ã¤rztliche Beurteilung.</p>
     <ul>
       <li>Alle Empfehlungen basieren auf AWMF S3-Leitlinien, AGO-Empfehlungen, ESMO Guidelines und KEM Chemostandards 2024 (Stand 02/2024).</li>
       <li>Therapieentscheidungen erfordern immer die individuelle klinische Bewertung durch erfahrene Onkologinnen und Onkologen.</li>
-      <li>Keine Haftung für Behandlungsentscheidungen, die auf Basis dieses Tools getroffen werden.</li>
-      <li>Protokolldosen müssen gegen Körperoberfläche, Nierenfunktion und Komorbiditäten individuell angepasst werden.</li>
+      <li>Keine Haftung fÃ¼r Behandlungsentscheidungen, die auf Basis dieses Tools getroffen werden.</li>
+      <li>Protokolldosen mÃ¼ssen gegen KÃ¶rperoberflÃ¤che, Nierenfunktion und KomorbiditÃ¤ten individuell angepasst werden.</li>
     </ul>
-    <p style="font-size:11px;color:var(--muted)">Elisabeth-Krankenhaus Essen · Autor: Dr. Frank Piczlewicz · Tumorkonferenz Gynäkologie · Version 4.0 (2025)</p>
-    <button class="disc-btn" onclick="dismissDisclaimer()">Verstanden – App starten</button>
+    <p style="font-size:11px;color:var(--muted)">Elisabeth-Krankenhaus Essen Â· Autor: Dr. Frank Piczlewicz Â· Tumorkonferenz GynÃ¤kologie Â· Version 4.0 (2025)</p>
+    <button class="disc-btn" onclick="dismissDisclaimer()">Verstanden â€“ App starten</button>
   </div>
 </div>
 
@@ -171,17 +171,17 @@ nav#nav-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:10
   <header>
     <div class="hdr-row">
       <div>
-        <div class="hdr-title">🏥 Tumorkonferenz Gynäkologie</div>
-        <div class="hdr-sub">Elisabeth-Krankenhaus Essen · Dr. Frank Piczlewicz</div>
+        <div class="hdr-title">ðŸ¥ Tumorkonferenz GynÃ¤kologie</div>
+        <div class="hdr-sub">Elisabeth-Krankenhaus Essen Â· Dr. Frank Piczlewicz</div>
       </div>
-      <button class="theme-btn" onclick="toggleTheme()">🌙/☀</button>
+      <button class="theme-btn" onclick="toggleTheme()">ðŸŒ™/â˜€</button>
     </div>
     <div class="prog-bar" id="progress-bar"></div>
   </header>
   <main id="main"></main>
   <nav id="nav-bar" style="display:none">
-    <button class="nav-btn" id="btn-back" onclick="prevStep()">← Zurück</button>
-    <button class="nav-btn" id="btn-next" onclick="nextStep()">Weiter →</button>
+    <button class="nav-btn" id="btn-back" onclick="prevStep()">â† ZurÃ¼ck</button>
+    <button class="nav-btn" id="btn-next" onclick="nextStep()">Weiter â†’</button>
   </nav>
 </div>
 
@@ -193,11 +193,11 @@ const S = {
   bio:{hist:'',er:'',pr:'',her2:'',ki67:20,msi:'',pole:'wildtyp',p53:'',pdl1:'',hrd:'',nac:'nein',res:'',pfi:'',bev:'nein'}
 };
 const TYPES=[
-  {id:'mamma',name:'Mammakarzinom',icon:'🎗',sub:'Brustdrüse',locked:true},
-  {id:'cervix',name:'Cervixkarzinom',icon:'🔴',sub:'Gebärmutterhals'},
-  {id:'endometrium',name:'Endometriumkarzinom',icon:'🟠',sub:'Gebärmutterkörper'},
-  {id:'ovar',name:'Ovarialkarzinom',icon:'🟡',sub:'Eierstock / Tube',locked:true},
-  {id:'vulva',name:'Vulvakarzinom',icon:'🔵',sub:'Äußere Genitale'},
+  {id:'mamma',name:'Mammakarzinom',icon:'ðŸŽ—',sub:'BrustdrÃ¼se',locked:true},
+  {id:'cervix',name:'Cervixkarzinom',icon:'ðŸ”´',sub:'GebÃ¤rmutterhals'},
+  {id:'endometrium',name:'Endometriumkarzinom',icon:'ðŸŸ ',sub:'GebÃ¤rmutterkÃ¶rper'},
+  {id:'ovar',name:'Ovarialkarzinom',icon:'ðŸŸ¡',sub:'Eierstock / Tube',locked:true},
+  {id:'vulva',name:'Vulvakarzinom',icon:'ðŸ”µ',sub:'Ã„uÃŸere Genitale'},
 ];
 const STEP_LABELS=['Tumortyp','Patient','Staging','Biomarker','Empfehlung'];
 
@@ -205,7 +205,7 @@ function radio(name,opts,val,fn){
   return opts.map(o=>`<span class="radio-opt${val===o.v?' sel':''}" onclick="${fn}('${o.v}')">${o.l}</span>`).join('');
 }
 function sel(name,opts,val,fn){
-  const placeholder=`<option value="" ${val?'':'selected'} disabled>– bitte auswählen –</option>`;
+  const placeholder=`<option value="" ${val?'':'selected'} disabled>â€“ bitte auswÃ¤hlen â€“</option>`;
   const os=opts.map(o=>`<option value="${o.v}"${val===o.v?' selected':''}>${o.l}</option>`).join('');
   return `<select class="fselect" onchange="${fn}(this.value)">${placeholder}${os}</select>`;
 }
@@ -226,19 +226,19 @@ function renderNav(){
   if(S.step===0){nav.style.display='none';return;}
   nav.style.display='flex';
   back.style.display=S.step<=1?'none':'flex';
-  next.textContent=S.step===4?'↺ Neuer Fall':'Weiter →';
+  next.textContent=S.step===4?'â†º Neuer Fall':'Weiter â†’';
 }
 
 function renderStep0(){
-  let html=`<div class="sec-title">Tumortyp auswählen</div>
-  <div class="sec-sub">Wählen Sie die Entität für die Therapieempfehlung</div>
+  let html=`<div class="sec-title">Tumortyp auswÃ¤hlen</div>
+  <div class="sec-sub">WÃ¤hlen Sie die EntitÃ¤t fÃ¼r die Therapieempfehlung</div>
   <div class="tgrid">`;
   TYPES.forEach(t=>{
     if(t.locked){
       html+=`<button class="tcard tcard-locked" onclick="alert('${t.name}: noch nicht freigegeben.')">
         <div class="tcard-icon">${t.icon}</div>
         <div class="tcard-name">${t.name}</div>
-        <div class="tcard-sub">🔒 noch nicht freigegeben</div>
+        <div class="tcard-sub">ðŸ”’ noch nicht freigegeben</div>
       </button>`;
     } else {
       html+=`<button class="tcard" onclick="selectType('${t.id}')">
@@ -255,14 +255,14 @@ function selectType(id){S.type=id==='tube'?'ovar':id;S.step=1;render();}
 
 function renderStep1(){
   const menoOpts=S.type==='mamma'||S.type==='endometrium'
-    ?[{v:'prä',l:'Prämenopausal'},{v:'peri',l:'Perimenopausal'},{v:'post',l:'Postmenopausal'}]:null;
+    ?[{v:'prÃ¤',l:'PrÃ¤menopausal'},{v:'peri',l:'Perimenopausal'},{v:'post',l:'Postmenopausal'}]:null;
   let html=`<div class="sec-title">Patientendaten</div><div class="sec-sub">Allgemeine Informationen</div>`;
   html+=fg('Alter (Jahre)',`<input class="finput" type="number" id="age" min="18" max="99" value="${S.p.age}" onchange="S.p.age=this.value">`);
   if(menoOpts){
     html+=`<div class="fg"><label class="flabel">Menopausenstatus</label><div class="radiogrp">${radio('meno',menoOpts,S.p.meno,'setMeno')}</div></div>`;
   }
   if(S.type==='cervix'){
-    html+=`<div class="fg"><label class="flabel">Fertilitätswunsch</label><div class="radiogrp">${radio('fert',[{v:'ja',l:'Ja'},{v:'nein',l:'Nein'}],S.p.fertility,'setFertility')}</div></div>`;
+    html+=`<div class="fg"><label class="flabel">FertilitÃ¤tswunsch</label><div class="radiogrp">${radio('fert',[{v:'ja',l:'Ja'},{v:'nein',l:'Nein'}],S.p.fertility,'setFertility')}</div></div>`;
   }
   if(S.type==='mamma'||S.type==='ovar'){
     html+=`<div class="fg"><label class="flabel">BRCA1/2-Status</label><div class="radiogrp">${radio('brca',[{v:'positiv',l:'Mutiert'},{v:'negativ',l:'Negativ'},{v:'unbekannt',l:'Unbekannt'}],S.p.brca,'setBRCA')}</div></div>`;
@@ -289,10 +289,10 @@ function renderStagingMamma(){
   </div></div>
   <div class="tnmrow">
     <div class="fg"><label class="flabel">T</label>
-      ${sel('T',[{v:'Tis',l:'Tis'},{v:'T1a',l:'T1a'},{v:'T1b',l:'T1b'},{v:'T1c',l:'T1c'},{v:'T2',l:'T2'},{v:'T3',l:'T3'},{v:'T4a',l:'T4a'},{v:'T4b',l:'T4b'},{v:'T4d',l:'T4d entzündl.'}],S.staging.T,'setT')}
+      ${sel('T',[{v:'Tis',l:'Tis'},{v:'T1a',l:'T1a'},{v:'T1b',l:'T1b'},{v:'T1c',l:'T1c'},{v:'T2',l:'T2'},{v:'T3',l:'T3'},{v:'T4a',l:'T4a'},{v:'T4b',l:'T4b'},{v:'T4d',l:'T4d entzÃ¼ndl.'}],S.staging.T,'setT')}
     </div>
     <div class="fg"><label class="flabel">N</label>
-      ${sel('N',[{v:'N0',l:'N0'},{v:'N1mi',l:'N1mi'},{v:'N1',l:'N1 (1–3)'},{v:'N2',l:'N2 (4–9)'},{v:'N3',l:'N3 (≥10)'}],S.staging.N,'setN')}
+      ${sel('N',[{v:'N0',l:'N0'},{v:'N1mi',l:'N1mi'},{v:'N1',l:'N1 (1â€“3)'},{v:'N2',l:'N2 (4â€“9)'},{v:'N3',l:'N3 (â‰¥10)'}],S.staging.N,'setN')}
     </div>
     <div class="fg"><label class="flabel">M</label>
       ${sel('M',[{v:'M0',l:'M0'},{v:'M1',l:'M1'}],S.staging.M,'setM')}
@@ -311,22 +311,22 @@ function renderStagingMamma(){
 function renderStagingCervix(){
   return `<div class="fg"><label class="flabel">FIGO-Stadium (2018)</label>
   ${sel('figo',[
-    {v:'IA1',l:'IA1 – Stromainvasion ≤3 mm'},{v:'IA2',l:'IA2 – Stromainvasion >3 bis ≤5 mm'},
-    {v:'IB1',l:'IB1 – Invasion >5 mm, Tumor ≤2 cm'},{v:'IB2',l:'IB2 – Tumor >2 bis ≤4 cm'},{v:'IB3',l:'IB3 – Tumor >4 cm'},
-    {v:'IIA1',l:'IIA1 – Obere 2/3 Vagina, ≤4 cm'},{v:'IIA2',l:'IIA2 – Obere 2/3 Vagina, >4 cm'},
-    {v:'IIB',l:'IIB – Parametriumbeteiligung (nicht bis Beckenwand)'},
-    {v:'IIIA',l:'IIIA – Unteres Vaginaldrittel, keine Beckenwand'},{v:'IIIB',l:'IIIB – Beckenwand und/oder Hydronephrose'},
-    {v:'IIIC1',l:'IIIC1 – Pelvine LK (r=Bildgebung, p=Pathologie)'},{v:'IIIC2',l:'IIIC2 – Para-aortale LK (r/p)'},
-    {v:'IVA',l:'IVA – Blasen-/Rektumschleimhaut (biopsiegesichert; bullöses Ödem allein reicht nicht)'},{v:'IVB',l:'IVB – Fernmetastasen (inkl. peritoneal, supraklavikulär, mediastinal, inguinal)'}
+    {v:'IA1',l:'IA1 â€“ Stromainvasion â‰¤3 mm'},{v:'IA2',l:'IA2 â€“ Stromainvasion >3 bis â‰¤5 mm'},
+    {v:'IB1',l:'IB1 â€“ Invasion >5 mm, Tumor â‰¤2 cm'},{v:'IB2',l:'IB2 â€“ Tumor >2 bis â‰¤4 cm'},{v:'IB3',l:'IB3 â€“ Tumor >4 cm'},
+    {v:'IIA1',l:'IIA1 â€“ Obere 2/3 Vagina, â‰¤4 cm'},{v:'IIA2',l:'IIA2 â€“ Obere 2/3 Vagina, >4 cm'},
+    {v:'IIB',l:'IIB â€“ Parametriumbeteiligung (nicht bis Beckenwand)'},
+    {v:'IIIA',l:'IIIA â€“ Unteres Vaginaldrittel, keine Beckenwand'},{v:'IIIB',l:'IIIB â€“ Beckenwand und/oder Hydronephrose'},
+    {v:'IIIC1',l:'IIIC1 â€“ Pelvine LK (r=Bildgebung, p=Pathologie)'},{v:'IIIC2',l:'IIIC2 â€“ Para-aortale LK (r/p)'},
+    {v:'IVA',l:'IVA â€“ Blasen-/Rektumschleimhaut (biopsiegesichert; bullÃ¶ses Ã–dem allein reicht nicht)'},{v:'IVB',l:'IVB â€“ Fernmetastasen (inkl. peritoneal, supraklavikulÃ¤r, mediastinal, inguinal)'}
   ],S.staging.figo,'setFIGO')}
   </div>
   <div class="figo23-box">
-    <div class="figo23-title">📋 FIGO 2018 – Allgemeine Staging-Regeln Zervix</div>
-    <p><strong>Bei Zweifel:</strong> Immer niedrigeres Stadium wählen</p>
-    <p><strong>LVSI / Gefäßinvasion:</strong> Ändert das Stadium nicht</p>
+    <div class="figo23-title">ðŸ“‹ FIGO 2018 â€“ Allgemeine Staging-Regeln Zervix</div>
+    <p><strong>Bei Zweifel:</strong> Immer niedrigeres Stadium wÃ¤hlen</p>
+    <p><strong>LVSI / GefÃ¤ÃŸinvasion:</strong> Ã„ndert das Stadium nicht</p>
     <p><strong>Ausdehnung auf Korpus:</strong> Wird ignoriert</p>
-    <p><strong>IIIC r/p:</strong> r = Bildgebung, p = Pathologie (p hat Vorrang). Isolierte Tumorzellen dokumentieren, Stadium unverändert</p>
-    <p><strong>IB beginnt</strong> erst bei Invasionstiefe &gt;5 mm. ≤5 mm = IA</p>
+    <p><strong>IIIC r/p:</strong> r = Bildgebung, p = Pathologie (p hat Vorrang). Isolierte Tumorzellen dokumentieren, Stadium unverÃ¤ndert</p>
+    <p><strong>IB beginnt</strong> erst bei Invasionstiefe &gt;5 mm. â‰¤5 mm = IA</p>
   </div>
   <div class="fg"><label class="flabel">Histologie</label><div class="radiogrp">
     ${radio('hist',[{v:'SCC',l:'SCC'},{v:'Adeno',l:'Adeno-CA'},{v:'Adeno-SCC',l:'Adeno-SCC'},{v:'andere',l:'Andere'}],S.bio.hist,'setHist')}
@@ -338,88 +338,88 @@ function renderStagingCervix(){
 function renderStagingEndo(){
   return `<div class="fg"><label class="flabel">FIGO-Stadium (2023 molekular-integriert)</label>
   ${sel('figo',[
-    {v:'IA1',l:'IA1 – Nicht aggressiv, auf Polyp/Endometrium begrenzt'},
-    {v:'IA2',l:'IA2 – Nicht aggressiv, <50% Myoinvasion, keine/fokale LVSI'},
-    {v:'IA3',l:'IA3 – Low-grade endometrioid, <50% Myoinv., keine subst. LVSI, synchroner Ovarialtumor (einseitig, auf Ovar begrenzt, keine Kapselinvasion)'},
-    {v:'IAmPOLEmut',l:'IAmPOLEmut – POLE-mutiert, Korpus ± Zervix (jede Histologie)'},
-    {v:'IB',l:'IB – Nicht aggressiv, ≥50% Myoinvasion, keine/fokale LVSI'},
-    {v:'IC',l:'IC – Aggressive Histologie, auf Polyp/Endometrium begrenzt, ohne Myoinvasion'},
-    {v:'IIA',l:'IIA – Nicht aggressiv, Zervixstromainfiltration'},
-    {v:'IIB',l:'IIB – Nicht aggressiv, substanzielle LVSI (≥5 befallene Gefäße)'},
-    {v:'IIC',l:'IIC – Aggressive Histologie, jede Myoinvasion'},
-    {v:'IICmp53abn',l:'IICmp53abn – p53abn mit jeder Myoinvasion ± Zervix (unabhängig von LVSI/Histologie)'},
-    {v:'IIIA1',l:'IIIA1 – Ovar- oder Tubenbefall (außer IA3)'},
-    {v:'IIIA2',l:'IIIA2 – Subserosa oder Spread durch die Uterusserosa'},
-    {v:'IIIB1',l:'IIIB1 – Vagina / Parametrien'},
-    {v:'IIIB2',l:'IIIB2 – Pelvines Peritoneum'},
-    {v:'IIIC1i',l:'IIIC1i – Pelvine LK, Mikrometastase (0,2–2 mm und/oder >200 Zellen)'},
-    {v:'IIIC1ii',l:'IIIC1ii – Pelvine LK, Makrometastase (>2 mm)'},
-    {v:'IIIC2i',l:'IIIC2i – Para-aortale LK bis Nierengefäße, Mikrometastase ± pelviner Befall'},
-    {v:'IIIC2ii',l:'IIIC2ii – Para-aortale LK bis Nierengefäße, Makrometastase ± pelviner Befall'},
-    {v:'IVA',l:'IVA – Blasen- oder Darmmukosa'},
-    {v:'IVB',l:'IVB – Abdominale Peritonealmetastasen jenseits des Beckens'},
-    {v:'IVC',l:'IVC – Fernmetastasen (LK oberh. Nierengefäße, Lunge, Leber, Gehirn, Knochen)'}
+    {v:'IA1',l:'IA1 â€“ Nicht aggressiv, auf Polyp/Endometrium begrenzt'},
+    {v:'IA2',l:'IA2 â€“ Nicht aggressiv, <50% Myoinvasion, keine/fokale LVSI'},
+    {v:'IA3',l:'IA3 â€“ Low-grade endometrioid, <50% Myoinv., keine subst. LVSI, synchroner Ovarialtumor (einseitig, auf Ovar begrenzt, keine Kapselinvasion)'},
+    {v:'IAmPOLEmut',l:'IAmPOLEmut â€“ POLE-mutiert, Korpus Â± Zervix (jede Histologie)'},
+    {v:'IB',l:'IB â€“ Nicht aggressiv, â‰¥50% Myoinvasion, keine/fokale LVSI'},
+    {v:'IC',l:'IC â€“ Aggressive Histologie, auf Polyp/Endometrium begrenzt, ohne Myoinvasion'},
+    {v:'IIA',l:'IIA â€“ Nicht aggressiv, Zervixstromainfiltration'},
+    {v:'IIB',l:'IIB â€“ Nicht aggressiv, substanzielle LVSI (â‰¥5 befallene GefÃ¤ÃŸe)'},
+    {v:'IIC',l:'IIC â€“ Aggressive Histologie, jede Myoinvasion'},
+    {v:'IICmp53abn',l:'IICmp53abn â€“ p53abn mit jeder Myoinvasion Â± Zervix (unabhÃ¤ngig von LVSI/Histologie)'},
+    {v:'IIIA1',l:'IIIA1 â€“ Ovar- oder Tubenbefall (auÃŸer IA3)'},
+    {v:'IIIA2',l:'IIIA2 â€“ Subserosa oder Spread durch die Uterusserosa'},
+    {v:'IIIB1',l:'IIIB1 â€“ Vagina / Parametrien'},
+    {v:'IIIB2',l:'IIIB2 â€“ Pelvines Peritoneum'},
+    {v:'IIIC1i',l:'IIIC1i â€“ Pelvine LK, Mikrometastase (0,2â€“2 mm und/oder >200 Zellen)'},
+    {v:'IIIC1ii',l:'IIIC1ii â€“ Pelvine LK, Makrometastase (>2 mm)'},
+    {v:'IIIC2i',l:'IIIC2i â€“ Para-aortale LK bis NierengefÃ¤ÃŸe, Mikrometastase Â± pelviner Befall'},
+    {v:'IIIC2ii',l:'IIIC2ii â€“ Para-aortale LK bis NierengefÃ¤ÃŸe, Makrometastase Â± pelviner Befall'},
+    {v:'IVA',l:'IVA â€“ Blasen- oder Darmmukosa'},
+    {v:'IVB',l:'IVB â€“ Abdominale Peritonealmetastasen jenseits des Beckens'},
+    {v:'IVC',l:'IVC â€“ Fernmetastasen (LK oberh. NierengefÃ¤ÃŸe, Lunge, Leber, Gehirn, Knochen)'}
   ],S.staging.figo,'setFIGO')}
   </div>
   <div class="fg"><label class="flabel">Grading</label><div class="radiogrp">
     ${radio('grade',[{v:'G1',l:'G1'},{v:'G2',l:'G2'},{v:'G3',l:'G3'}],S.staging.grade,'setGrade')}
   </div></div>
   <div class="fg"><label class="flabel">LVSI</label><div class="radiogrp">
-    ${radio('lvsi',[{v:'negativ',l:'Negativ'},{v:'fokal',l:'Fokal (keine Upstaging-Relevanz)'},{v:'substanziell',l:'Substanziell (→ Stadium IIB!)'}],S.staging.lvsi,'setLVSI')}
+    ${radio('lvsi',[{v:'negativ',l:'Negativ'},{v:'fokal',l:'Fokal (keine Upstaging-Relevanz)'},{v:'substanziell',l:'Substanziell (â†’ Stadium IIB!)'}],S.staging.lvsi,'setLVSI')}
   </div></div>
   <div class="figo23-box">
-    <div class="figo23-title">🧬 FIGO 2023 – Schlüsselprinzipien Endometrium</div>
-    <p><strong>Histologie:</strong> Nicht aggressiv = Endometrioid G1/G2. Aggressiv = Endometrioid G3, serös, klarzellig, Karzinosarkom, undifferenziert</p>
-    <p><strong>IAmPOLEmut:</strong> POLE-mutiert → exzellente Prognose, jede Histologie, auf Korpus ± Zervix begrenzt</p>
+    <div class="figo23-title">ðŸ§¬ FIGO 2023 â€“ SchlÃ¼sselprinzipien Endometrium</div>
+    <p><strong>Histologie:</strong> Nicht aggressiv = Endometrioid G1/G2. Aggressiv = Endometrioid G3, serÃ¶s, klarzellig, Karzinosarkom, undifferenziert</p>
+    <p><strong>IAmPOLEmut:</strong> POLE-mutiert â†’ exzellente Prognose, jede Histologie, auf Korpus Â± Zervix begrenzt</p>
     <p><strong>IA3:</strong> Low-grade endometrioid + synchroner low-grade endometrioider Ovarialtumor (uterin begrenzt)</p>
-    <p><strong>IICmp53abn:</strong> p53-abnorm mit jeder Myoinvasion ± Zervix, unabhängig von LVSI und Histologie</p>
-    <p><strong>IIB:</strong> Substanzielle LVSI (≥5 Gefäße) → IIB (nicht-aggressiv). Fokale LVSI = kein Upstaging</p>
-    <p><strong>Molekulare Suffix-Dokumentation:</strong> POLEmut + p53abn → POLEmut. MMRd + p53abn → MMRd. Alle 4 Klassen sollen dokumentiert werden (z.B. ImMMRd, IIImNSMP, IVmp53abn)</p>
-    <p><strong>Aggressive Histologie:</strong> G3 endometrioid, serös, klarzellig, undifferenziert, gemischt, mesonephric-like, gastrointestinal-muzinös, Karzinosarkom. G3 ohne Molekularklassifikation → wie aggressiv</p>
+    <p><strong>IICmp53abn:</strong> p53-abnorm mit jeder Myoinvasion Â± Zervix, unabhÃ¤ngig von LVSI und Histologie</p>
+    <p><strong>IIB:</strong> Substanzielle LVSI (â‰¥5 GefÃ¤ÃŸe) â†’ IIB (nicht-aggressiv). Fokale LVSI = kein Upstaging</p>
+    <p><strong>Molekulare Suffix-Dokumentation:</strong> POLEmut + p53abn â†’ POLEmut. MMRd + p53abn â†’ MMRd. Alle 4 Klassen sollen dokumentiert werden (z.B. ImMMRd, IIImNSMP, IVmp53abn)</p>
+    <p><strong>Aggressive Histologie:</strong> G3 endometrioid, serÃ¶s, klarzellig, undifferenziert, gemischt, mesonephric-like, gastrointestinal-muzinÃ¶s, Karzinosarkom. G3 ohne Molekularklassifikation â†’ wie aggressiv</p>
     <p><strong>Beckengrenze:</strong> Spina iliaca anterior superior (trennt IIIB2 von IVB)</p>
-    <p><strong>ITC (≤0,2 mm / ≤200 Zellen):</strong> pN0(i+), kein Stadium III. Erst >0,2 mm = IIIC1i</p>
+    <p><strong>ITC (â‰¤0,2 mm / â‰¤200 Zellen):</strong> pN0(i+), kein Stadium III. Erst >0,2 mm = IIIC1i</p>
     <p><strong>Positive Peritonealzytologie allein:</strong> Kein Upstaging mehr</p>
   </div>`;
 }
 function renderStagingOvar(){
   return `<div class="fg"><label class="flabel">FIGO-Stadium</label>
   ${sel('figo',[
-    {v:'IA',l:'IA – Ein Ovar, Kapsel intakt'},{v:'IB',l:'IB – Beide Ovarien, Kapsel intakt'},
-    {v:'IC',l:'IC – Kapselruptur / Aszites / pos. Zytologie'},
-    {v:'IIA',l:'IIA – Uterus / Tuben'},{v:'IIB',l:'IIB – Andere Beckenstrukturen'},
-    {v:'IIIA1',l:'IIIA1 – Nur retroperitoneale LK'},
-    {v:'IIIA2',l:'IIIA2 – Mikrosk. Peritonealmetastasen'},
-    {v:'IIIB',l:'IIIB – Peritonealmet. ≤2cm'},{v:'IIIC',l:'IIIC – Peritonealmet. >2cm'},
-    {v:'IVA',l:'IVA – Pleuraerguss zytologisch pos.'},{v:'IVB',l:'IVB – Parenchymatöse Metastasen'}
+    {v:'IA',l:'IA â€“ Ein Ovar, Kapsel intakt'},{v:'IB',l:'IB â€“ Beide Ovarien, Kapsel intakt'},
+    {v:'IC',l:'IC â€“ Kapselruptur / Aszites / pos. Zytologie'},
+    {v:'IIA',l:'IIA â€“ Uterus / Tuben'},{v:'IIB',l:'IIB â€“ Andere Beckenstrukturen'},
+    {v:'IIIA1',l:'IIIA1 â€“ Nur retroperitoneale LK'},
+    {v:'IIIA2',l:'IIIA2 â€“ Mikrosk. Peritonealmetastasen'},
+    {v:'IIIB',l:'IIIB â€“ Peritonealmet. â‰¤2cm'},{v:'IIIC',l:'IIIC â€“ Peritonealmet. >2cm'},
+    {v:'IVA',l:'IVA â€“ Pleuraerguss zytologisch pos.'},{v:'IVB',l:'IVB â€“ ParenchymatÃ¶se Metastasen'}
   ],S.staging.figo,'setFIGO')}
   </div>
   <div class="fg"><label class="flabel">R-Status / Zytoreduktion</label><div class="radiogrp">
     ${radio('rcyt',[{v:'R0',l:'R0 (komplett)'},{v:'R1',l:'R1 (mikrosk.)'},{v:'R2',l:'R2 (makrosk.)'},{v:'nein',l:'Noch nicht operiert'}],S.staging.stroma,'setStroma')}
   </div></div>
   <div class="fg"><label class="flabel">Therapiesituation</label><div class="radiogrp">
-    ${radio('taxsit',[{v:'primaer',l:'Primärtherapie'},{v:'rezidiv',l:'Rezidiv'}],S.bio.nac,'setNAC')}
+    ${radio('taxsit',[{v:'primaer',l:'PrimÃ¤rtherapie'},{v:'rezidiv',l:'Rezidiv'}],S.bio.nac,'setNAC')}
   </div></div>
   ${S.bio.nac==='rezidiv'?`<div class="fg"><label class="flabel">Platin-freies Intervall (PFI)</label><div class="radiogrp">
-    ${radio('pfi',[{v:'>6',l:'>6 Monate (sensitiv)'},{v:'<6',l:'<6 Monate (resistent)'},{v:'<1',l:'<1 Monat (refraktär)'}],S.bio.pfi,'setPFI')}
+    ${radio('pfi',[{v:'>6',l:'>6 Monate (sensitiv)'},{v:'<6',l:'<6 Monate (resistent)'},{v:'<1',l:'<1 Monat (refraktÃ¤r)'}],S.bio.pfi,'setPFI')}
   </div></div>`:''}`;
 }
 function renderStagingVulva(){
   return `<div class="fg"><label class="flabel">FIGO-Stadium</label>
   ${sel('figo',[
-    {v:'IA',l:'IA – ≤2cm, Stromainvasion ≤1mm'},{v:'IB',l:'IB – >2cm oder Invasion >1mm, N0'},
-    {v:'II',l:'II – Harnröhre/Vagina/Anus, N0'},
-    {v:'IIIA',l:'IIIA – 1 LK ≥5mm oder 1–2 LK <5mm'},
-    {v:'IIIB',l:'IIIB – ≥2 LK ≥5mm oder ≥3 LK <5mm'},
-    {v:'IIIC',l:'IIIC – LK mit Kapseldurchbruch'},
-    {v:'IVA',l:'IVA – Proxim. Harnröhre/Vagina, Blasen-/Rektumschleimhaut'},
-    {v:'IVB',l:'IVB – Fernmetastasen'}
+    {v:'IA',l:'IA â€“ â‰¤2cm, Stromainvasion â‰¤1mm'},{v:'IB',l:'IB â€“ >2cm oder Invasion >1mm, N0'},
+    {v:'II',l:'II â€“ HarnrÃ¶hre/Vagina/Anus, N0'},
+    {v:'IIIA',l:'IIIA â€“ 1 LK â‰¥5mm oder 1â€“2 LK <5mm'},
+    {v:'IIIB',l:'IIIB â€“ â‰¥2 LK â‰¥5mm oder â‰¥3 LK <5mm'},
+    {v:'IIIC',l:'IIIC â€“ LK mit Kapseldurchbruch'},
+    {v:'IVA',l:'IVA â€“ Proxim. HarnrÃ¶hre/Vagina, Blasen-/Rektumschleimhaut'},
+    {v:'IVB',l:'IVB â€“ Fernmetastasen'}
   ],S.staging.figo,'setFIGO')}
   </div>
   <div class="fg"><label class="flabel">Histologie</label><div class="radiogrp">
     ${radio('hist',[{v:'SCC',l:'Plattenepithel'},{v:'andere',l:'Andere'}],S.bio.hist,'setHist')}
   </div></div>
   <div class="fg"><label class="flabel">Resektionsstatus</label><div class="radiogrp">
-    ${radio('margin',[{v:'R0',l:'R0 (≥8mm)'},{v:'close',l:'Knapp (<8mm)'},{v:'R1',l:'R1 (positiv)'}],S.staging.stroma,'setStroma')}
+    ${radio('margin',[{v:'R0',l:'R0 (â‰¥8mm)'},{v:'close',l:'Knapp (<8mm)'},{v:'R1',l:'R1 (positiv)'}],S.staging.stroma,'setStroma')}
   </div></div>`;
 }
 
@@ -435,64 +435,63 @@ function renderStep3(){
 function renderBioMamma(){
   const ki67=parseInt(S.bio.ki67)||20;
   return `
-  ${fg('Östrogenrezeptor (ER)',`<div class="radiogrp">${radio('er',[{v:'positiv',l:'ER+ (≥1%)'},{v:'negativ',l:'ER−'}],S.bio.er,'setER')}</div>`)}
-  ${fg('Progesteronrezeptor (PR)',`<div class="radiogrp">${radio('pr',[{v:'positiv',l:'PR+ (≥1%)'},{v:'negativ',l:'PR−'}],S.bio.pr,'setPR')}</div>`)}
-  ${fg('HER2-Status',`<div class="radiogrp">${radio('her2',[{v:'positiv',l:'HER2+ (3+ oder 2+/ISH+)'},{v:'low',l:'HER2-low (1+ oder 2+/ISH−)'},{v:'ultralow',l:'HER2-ultralow (>0 <1+)'},{v:'negativ',l:'HER2-0 (IHC 0)'}],S.bio.her2,'setHER2')}</div>
-  <div class="info-box" style="margin-top:6px">ℹ HER2-low & ultralow: T-DXd-Indikation (DESTINY-Breast04/06) bei metastasierter Erkrankung prüfen.</div>`)}
-  <div class="fg"><label class="flabel">Ki-67 (%) — aktuell: <strong>${ki67}%</strong></label>
+  ${fg('Ã–strogenrezeptor (ER)',`<div class="radiogrp">${radio('er',[{v:'positiv',l:'ER+ (â‰¥1%)'},{v:'negativ',l:'ERâˆ’'}],S.bio.er,'setER')}</div>`)}
+  ${fg('Progesteronrezeptor (PR)',`<div class="radiogrp">${radio('pr',[{v:'positiv',l:'PR+ (â‰¥1%)'},{v:'negativ',l:'PRâˆ’'}],S.bio.pr,'setPR')}</div>`)}
+  ${fg('HER2-Status',`<div class="radiogrp">${radio('her2',[{v:'positiv',l:'HER2+ (3+ oder 2+/ISH+)'},{v:'low',l:'HER2-low (1+ oder 2+/ISHâˆ’)'},{v:'ultralow',l:'HER2-ultralow (>0 <1+)'},{v:'negativ',l:'HER2-0 (IHC 0)'}],S.bio.her2,'setHER2')}</div>
+  <div class="info-box" style="margin-top:6px">â„¹ HER2-low & ultralow: T-DXd-Indikation (DESTINY-Breast04/06) bei metastasierter Erkrankung prÃ¼fen.</div>`)}
+  <div class="fg"><label class="flabel">Ki-67 (%) â€” aktuell: <strong>${ki67}%</strong></label>
     <input type="range" min="1" max="95" step="1" value="${ki67}" class="fselect" style="padding:6px 0;border:none;border-radius:0;background:transparent" oninput="setKi67(this.value)">
     <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:2px"><span>1%</span><span>15%</span><span>30%</span><span>50%</span><span>95%</span></div>
   </div>
-  ${S.staging.stagingType!=='post-nac'?`${fg('Neoadjuvante Therapie geplant?',`<div class="radiogrp">${radio('nac',[{v:'ja',l:'Ja (NAC)'},{v:'nein',l:'Nein (primär OP)'}],S.bio.nac,'setNAC')}</div>`)}`:''}`;
+  ${S.staging.stagingType!=='post-nac'?`${fg('Neoadjuvante Therapie geplant?',`<div class="radiogrp">${radio('nac',[{v:'ja',l:'Ja (NAC)'},{v:'nein',l:'Nein (primÃ¤r OP)'}],S.bio.nac,'setNAC')}</div>`)}`:''}`;
 }
 function renderBioCervix(){
   return `
-  ${fg('PD-L1 CPS',`<div class="radiogrp">${radio('pdl1',[{v:'>=10',l:'CPS ≥10'},{v:'1-9',l:'CPS 1–9'},{v:'<1',l:'CPS <1'},{v:'unbekannt',l:'Unbekannt'}],S.bio.pdl1,'setPDL1')}</div>`)}
-  <div class="info-box">ℹ PD-L1 CPS ≥1 → Pembrolizumab + Chemotherapie bei persistierendem/rezidivierendem Cervixkarzinom (KEYNOTE-826, AGO++). PD-L1 unabhängig bei KEYNOTE-A18 (lokal fortgeschritten).</div>
+  ${fg('PD-L1 CPS',`<div class="radiogrp">${radio('pdl1',[{v:'>=10',l:'CPS â‰¥10'},{v:'1-9',l:'CPS 1â€“9'},{v:'<1',l:'CPS <1'},{v:'unbekannt',l:'Unbekannt'}],S.bio.pdl1,'setPDL1')}</div>`)}
+  <div class="info-box">â„¹ PD-L1 CPS â‰¥1 â†’ Pembrolizumab + Chemotherapie bei persistierendem/rezidivierendem Cervixkarzinom (KEYNOTE-826, AGO++). PD-L1 unabhÃ¤ngig bei KEYNOTE-A18 (lokal fortgeschritten).</div>
   ${learn('bio-cx-pdl1','Lernhintergrund: PD-L1 beim Zervixkarzinom',`
-<h4>CPS vs. TPS – was ist der Unterschied?</h4>
-<p>TPS (Tumor Proportion Score) zählt nur Tumorzellen. CPS (Combined Positive Score) = PD-L1-positive Zellen (Tumor + Immunzellen + Stroma) / alle Tumorzellen × 100. <span class="hi">CPS ist sensitiver</span> und beim Zervixkarzinom der validierte Score.</p>
-<h4>Warum PD-L1 unabhängig bei KEYNOTE-A18?</h4>
-<p>KEYNOTE-A18 (lokal fortgeschritten): Pembrolizumab-Benefit unabhängig von CPS (Subgruppenanalyse). KEYNOTE-826 (metastasiert): Benefit nur bei CPS≥1. Unterschied erklärt sich durch die begleitende RT, die lokal das Immunmilieu aktiviert (abscopal effect).</p>
+<h4>CPS vs. TPS â€“ was ist der Unterschied?</h4>
+<p>TPS (Tumor Proportion Score) zÃ¤hlt nur Tumorzellen. CPS (Combined Positive Score) = PD-L1-positive Zellen (Tumor + Immunzellen + Stroma) / alle Tumorzellen Ã— 100. <span class="hi">CPS ist sensitiver</span> und beim Zervixkarzinom der validierte Score.</p>
+<h4>Warum PD-L1 unabhÃ¤ngig bei KEYNOTE-A18?</h4>
+<p>KEYNOTE-A18 (lokal fortgeschritten): Pembrolizumab-Benefit unabhÃ¤ngig von CPS (Subgruppenanalyse). KEYNOTE-826 (metastasiert): Benefit nur bei CPSâ‰¥1. Unterschied erklÃ¤rt sich durch die begleitende RT, die lokal das Immunmilieu aktiviert (abscopal effect).</p>
 <h4>PD-L1-Testung in der Praxis</h4>
-<p>KEYTRUDA: PD-L1 IHC 22C3 pharmDx Assay (Dako) als Companion Diagnostic. Testung am Primärtumor oder Biopsie aus Rezidiv/Metastase. Bei unbekanntem CPS: Testung nachholen oder empirisch als CPS&lt;1 behandeln.</p>`)}`;
+<p>KEYTRUDA: PD-L1 IHC 22C3 pharmDx Assay (Dako) als Companion Diagnostic. Testung am PrimÃ¤rtumor oder Biopsie aus Rezidiv/Metastase. Bei unbekanntem CPS: Testung nachholen oder empirisch als CPS&lt;1 behandeln.</p>`)}`;
 }
 function renderBioEndo(){
   return `
-  ${fg('Histologie',`<div class="radiogrp">${radio('hist',[{v:'endo-g1g2',l:'Endometrioid G1/G2'},{v:'endo-g3',l:'Endometrioid G3'},{v:'seroes',l:'Serös'},{v:'klarzellig',l:'Klarzellig'},{v:'karzinosarkom',l:'Karzinosarkom'}],S.bio.hist,'setHist')}</div>`)}
+  ${fg('Histologie',`<div class="radiogrp">${radio('hist',[{v:'endo-g1g2',l:'Endometrioid G1/G2'},{v:'endo-g3',l:'Endometrioid G3'},{v:'seroes',l:'SerÃ¶s'},{v:'klarzellig',l:'Klarzellig'},{v:'karzinosarkom',l:'Karzinosarkom'}],S.bio.hist,'setHist')}</div>`)}
   ${fg('POLE-Status',`<div class="radiogrp">${radio('pole',[{v:'mutiert',l:'POLE mutiert'},{v:'wildtyp',l:'POLE-Wildtyp'},{v:'unbekannt',l:'Unbekannt'}],S.bio.pole,'setPOLE')}</div>`)}
   ${fg('MMR-Status / MSI',`<div class="radiogrp">${radio('msi',[{v:'dMMR',l:'dMMR / MSI-H'},{v:'pMMR',l:'pMMR / MSS'},{v:'unbekannt',l:'Unbekannt'}],S.bio.msi,'setMSI')}</div>`)}
   ${fg('TP53-Mutation',`<div class="radiogrp">${radio('p53',[{v:'mutiert',l:'TP53 mutiert'},{v:'wildtyp',l:'TP53 wt'},{v:'unbekannt',l:'Unbekannt'}],S.bio.p53,'setP53')}</div>`)}
-  ${fg('HER2-Status (bei serösem EC)',`<div class="radiogrp">${radio('her2',[{v:'positiv',l:'HER2+'},{v:'negativ',l:'HER2−'},{v:'unbekannt',l:'Unbekannt'}],S.bio.her2,'setHER2')}</div>`)}
+  ${fg('HER2-Status (bei serÃ¶sem EC)',`<div class="radiogrp">${radio('her2',[{v:'positiv',l:'HER2+'},{v:'negativ',l:'HER2âˆ’'},{v:'unbekannt',l:'Unbekannt'}],S.bio.her2,'setHER2')}</div>`)}
   ${learn('bio-en-mol','Lernhintergrund: Molekulare Biomarker Endometrium',`
-<h4>POLE – Warum testen?</h4>
-<p>POLE-Mutation (exonuclease domain): <span class="hi">Hypermutierter Phänotyp</span>, exzellente Prognose. Hotspots: P286R, V411L, A456P, S459F. Methode: NGS (Sequenzierung) oder spezifische PCR. IHC nicht geeignet.</p>
+<h4>POLE â€“ Warum testen?</h4>
+<p>POLE-Mutation (exonuclease domain): <span class="hi">Hypermutierter PhÃ¤notyp</span>, exzellente Prognose. Hotspots: P286R, V411L, A456P, S459F. Methode: NGS (Sequenzierung) oder spezifische PCR. IHC nicht geeignet.</p>
 <h4>MMR-IHC vs. MSI-PCR</h4>
-<p>MMR-IHC (MLH1/PMS2/MSH2/MSH6): Verlust eines Proteins = dMMR. MSI-PCR (5 Microsatelliten): ≥2 instabil = MSI-H. <span class="hi">IHC und PCR korrelieren zu ~95%</span>, aber Diskordanzen möglich (z.B. PMS2-Verlust isoliert). Beide Methoden akzeptiert.</p>
+<p>MMR-IHC (MLH1/PMS2/MSH2/MSH6): Verlust eines Proteins = dMMR. MSI-PCR (5 Microsatelliten): â‰¥2 instabil = MSI-H. <span class="hi">IHC und PCR korrelieren zu ~95%</span>, aber Diskordanzen mÃ¶glich (z.B. PMS2-Verlust isoliert). Beide Methoden akzeptiert.</p>
 <h4>TP53-IHC-Interpretation</h4>
-<p>p53-abnorm: (1) Diffuse Überexpression &gt;80% oder (2) Komplett-Verlust 0%. p53-wildtyp: heterogenes Muster 10–80%. Cave: Extreme Färbemuster = abnorm; <span class="hi">NIE allein auf morphologische Einschätzung verlassen</span>.</p>
-<h4>HER2 beim serösen EC</h4>
-<p>HER2 2+ oder 3+ per IHC, Konfirmation durch FISH bei 2+. Prävalenz ~30% seröser EC. <span class="hi">Trastuzumab + Carbo/Pac</span> zeigt klinischen Benefit (Phase-II). Zulassung in Prüfung.</p>`)}`;
-}
+<p>p53-abnorm: (1) Diffuse Ãœberexpression &gt;80% oder (2) Komplett-Verlust 0%. p53-wildtyp: heterogenes Muster 10â€“80%. Cave: Extreme FÃ¤rbemuster = abnorm; <span class="hi">NIE allein auf morphologische EinschÃ¤tzung verlassen</span>.</p>
+<h4>HER2 beim serÃ¶sen EC</h4>
+<p>HER2 2+ oder 3+ per IHC, Konfirmation durch FISH bei 2+. PrÃ¤valenz ~30% serÃ¶ser EC. <span class="hi">Trastuzumab + Carbo/Pac</span> zeigt klinischen Benefit (Phase-II). Zulassung in PrÃ¼fung.</p>`)}`;
 }
 function renderBioOvar(){
   return `
-  ${fg('Histologie',`<div class="radiogrp">${radio('hist',[{v:'hgsc',l:'High-grade serös'},{v:'lgsc',l:'Low-grade serös'},{v:'klarzellig',l:'Klarzellig'},{v:'muzinoes',l:'Muzinös'},{v:'endo',l:'Endometrioid'}],S.bio.hist,'setHist')}</div>`)}
-  ${fg('HRD-Status',`<div class="radiogrp">${radio('hrd',[{v:'positiv',l:'HRD+ (inkl. non-BRCA)'},{v:'negativ',l:'HRD−'},{v:'unbekannt',l:'Unbekannt'}],S.bio.hrd,'setHRD')}</div>`)}
-  ${fg('FRα-Status (bei Rezidiv)',`<div class="radiogrp">${radio('fra',[{v:'positiv',l:'FRα+ (PS ≥75%)'},{v:'negativ',l:'FRα−'},{v:'unbekannt',l:'Unbekannt'}],S.bio.pdl1,'setPDL1')}</div>`)}
-  ${S.bio.nac==='primaer'?`${fg('Bevacizumab in Primärtherapie?',`<div class="radiogrp">${radio('bev',[{v:'ja',l:'Ja'},{v:'nein',l:'Nein / KI'}],S.bio.bev,'setBEV')}</div>`)}`:''}`;
+  ${fg('Histologie',`<div class="radiogrp">${radio('hist',[{v:'hgsc',l:'High-grade serÃ¶s'},{v:'lgsc',l:'Low-grade serÃ¶s'},{v:'klarzellig',l:'Klarzellig'},{v:'muzinoes',l:'MuzinÃ¶s'},{v:'endo',l:'Endometrioid'}],S.bio.hist,'setHist')}</div>`)}
+  ${fg('HRD-Status',`<div class="radiogrp">${radio('hrd',[{v:'positiv',l:'HRD+ (inkl. non-BRCA)'},{v:'negativ',l:'HRDâˆ’'},{v:'unbekannt',l:'Unbekannt'}],S.bio.hrd,'setHRD')}</div>`)}
+  ${fg('FRÎ±-Status (bei Rezidiv)',`<div class="radiogrp">${radio('fra',[{v:'positiv',l:'FRÎ±+ (PS â‰¥75%)'},{v:'negativ',l:'FRÎ±âˆ’'},{v:'unbekannt',l:'Unbekannt'}],S.bio.pdl1,'setPDL1')}</div>`)}
+  ${S.bio.nac==='primaer'?`${fg('Bevacizumab in PrimÃ¤rtherapie?',`<div class="radiogrp">${radio('bev',[{v:'ja',l:'Ja'},{v:'nein',l:'Nein / KI'}],S.bio.bev,'setBEV')}</div>`)}`:''}`;
 }
 function renderBioVulva(){
   return `
-  ${fg('HPV-Status',`<div class="radiogrp">${radio('hpv',[{v:'positiv',l:'HPV-assoziiert'},{v:'negativ',l:'HPV-unabhängig (dVIN)'},{v:'unbekannt',l:'Unbekannt'}],S.bio.pdl1,'setPDL1')}</div>`)}
-  <div class="info-box">ℹ Bei LK-Beteiligung (IIIA–IVA) oder nicht-resektablem Tumor: primäre Radiochemotherapie mit Cisplatin als Alternative zur radikalen Operation (GROINSS-V).</div>
+  ${fg('HPV-Status',`<div class="radiogrp">${radio('hpv',[{v:'positiv',l:'HPV-assoziiert'},{v:'negativ',l:'HPV-unabhÃ¤ngig (dVIN)'},{v:'unbekannt',l:'Unbekannt'}],S.bio.pdl1,'setPDL1')}</div>`)}
+  <div class="info-box">â„¹ Bei LK-Beteiligung (IIIAâ€“IVA) oder nicht-resektablem Tumor: primÃ¤re Radiochemotherapie mit Cisplatin als Alternative zur radikalen Operation (GROINSS-V).</div>
   ${learn('bio-vl-hpv','Lernhintergrund: HPV-Status beim Vulvakarzinom',`
 <h4>HPV-assoziiertes Vulvakarzinom (p16+)</h4>
-<p>~55% aller Vulvakarzinome. Meist Plattenepithel, undifferenziert. Häufig bei jüngeren Frauen. Entstehung über HSIL (uVIN II-III). <span class="hi">Bessere Prognose</span> als HPV-unabhängig. Responsiver auf Radiochemotherapie.</p>
-<h4>HPV-unabhängiges Vulvakarzinom (dVIN)</h4>
-<p>~35–45% aller Vulvakarzinome. Differenziertes Plattenepithel, häufig auf Lichen sclerosus und/oder TP53-Mutation. Ältere Frauen. <span class="hi">Aggressiverer Verlauf</span>, höhere Rate an lokalem Rezidiv. p16-negativ.</p>
+<p>~55% aller Vulvakarzinome. Meist Plattenepithel, undifferenziert. HÃ¤ufig bei jÃ¼ngeren Frauen. Entstehung Ã¼ber HSIL (uVIN II-III). <span class="hi">Bessere Prognose</span> als HPV-unabhÃ¤ngig. Responsiver auf Radiochemotherapie.</p>
+<h4>HPV-unabhÃ¤ngiges Vulvakarzinom (dVIN)</h4>
+<p>~35â€“45% aller Vulvakarzinome. Differenziertes Plattenepithel, hÃ¤ufig auf Lichen sclerosus und/oder TP53-Mutation. Ã„ltere Frauen. <span class="hi">Aggressiverer Verlauf</span>, hÃ¶here Rate an lokalem Rezidiv. p16-negativ.</p>
 <h4>Klinische Konsequenz des HPV-Status</h4>
-<p>Bei HPV-assoziiertem Karzinom: Partneruntersuchung und HPV-Impfung bei jüngeren Frauen relevant. Bei dVIN: engmaschige Nachsorge und Behandlung des Lichen sclerosus als Präkanzerosenfeld. Sentinel-LNB gilt für beide Gruppen gleichermaßen.</p>`)}`;
+<p>Bei HPV-assoziiertem Karzinom: Partneruntersuchung und HPV-Impfung bei jÃ¼ngeren Frauen relevant. Bei dVIN: engmaschige Nachsorge und Behandlung des Lichen sclerosus als PrÃ¤kanzerosenfeld. Sentinel-LNB gilt fÃ¼r beide Gruppen gleichermaÃŸen.</p>`)}`;
 }
 
 function setSType(v){S.staging.stagingType=v;renderStep2()}
@@ -536,7 +535,7 @@ function render(){renderProgress();renderNav();
   window.scrollTo(0,0);
 }
 
-// ── RECOMMENDATION HELPERS ────────────────────────────────────────────────────
+// â”€â”€ RECOMMENDATION HELPERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function sec(type,title,icon,items,protocols=[]){
   const prots=protocols.map(p=>`<div class="pbox"><div class="pname">${p.name}</div><div class="pdet">${p.detail}</div></div>`).join('');
   const its=items.map(i=>`<div class="ritem">${i}</div>`).join('');
@@ -544,12 +543,12 @@ function sec(type,title,icon,items,protocols=[]){
 }
 function pill(t){return `<span class="pill">${t}</span>`}
 function ago(score){
-  const m={'++':['ago-pp','++'],'+':['ago-p','+'],['+/-']:['ago-pm','+/−'],['-']:['ago-m','−']};
+  const m={'++':['ago-pp','++'],'+':['ago-p','+'],['+/-']:['ago-pm','+/âˆ’'],['-']:['ago-m','âˆ’']};
   const[cls,txt]=m[score]||['ago-pm',score];
   return `<span class="ago ${cls}" title="AGO-Empfehlung">AGO ${txt}</span>`;
 }
 function study(name,desc){
-  return `<div class="study-box"><div class="study-title">🔬 Studienpfad prüfen</div><strong style="font-size:13px;color:#0c4a6e">${name}</strong><p>${desc}</p></div>`;
+  return `<div class="study-box"><div class="study-title">ðŸ”¬ Studienpfad prÃ¼fen</div><strong style="font-size:13px;color:#0c4a6e">${name}</strong><p>${desc}</p></div>`;
 }
 function toggleColl(id){
   const body=document.getElementById(id);
@@ -558,10 +557,10 @@ function toggleColl(id){
   hdr.classList.toggle('open',open);
 }
 function coll(id,icon,title,inner){
-  return `<div class="coll-hdr" onclick="toggleColl('${id}')"><span>${icon} ${title}</span><span class="coll-arrow">▼</span></div><div class="coll-body" id="${id}">${inner}</div>`;
+  return `<div class="coll-hdr" onclick="toggleColl('${id}')"><span>${icon} ${title}</span><span class="coll-arrow">â–¼</span></div><div class="coll-body" id="${id}">${inner}</div>`;
 }
 function learn(id,title,content){
-  return `<div class="learn-hdr" onclick="toggleLearn('${id}')"><span>📖 ${title}</span><span class="learn-arrow">▼</span></div><div class="learn-body" id="learn-${id}">${content}</div>`;
+  return `<div class="learn-hdr" onclick="toggleLearn('${id}')"><span>ðŸ“– ${title}</span><span class="learn-arrow">â–¼</span></div><div class="learn-body" id="learn-${id}">${content}</div>`;
 }
 function toggleLearn(id){
   const body=document.getElementById('learn-'+id);
@@ -570,104 +569,104 @@ function toggleLearn(id){
   hdr.classList.toggle('open',open);
 }
 
-// ── PATHOLOGIE-CHECKLISTE ─────────────────────────────────────────────────────
+// â”€â”€ PATHOLOGIE-CHECKLISTE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function checklistMamma(){
   const items=[];
-  if(!S.bio.er) items.push({cls:'missing',icon:'⚠️',text:'ER-Status fehlt → obligat!'});
-  else items.push({cls:'ok',icon:'✅',text:`ER: ${S.bio.er}`});
-  if(!S.bio.pr) items.push({cls:'missing',icon:'⚠️',text:'PR-Status fehlt → obligat!'});
-  else items.push({cls:'ok',icon:'✅',text:`PR: ${S.bio.pr}`});
-  if(!S.bio.her2) items.push({cls:'missing',icon:'⚠️',text:'HER2-Status fehlt → obligat (IHC → ISH bei 2+)!'});
-  else items.push({cls:'ok',icon:'✅',text:`HER2: ${S.bio.her2}`});
-  items.push({cls:'info',icon:'ℹ️',text:`Ki-67: ${S.bio.ki67}% (Referenzlabor empfohlen bei Grenzwert 15–30%)`});
+  if(!S.bio.er) items.push({cls:'missing',icon:'âš ï¸',text:'ER-Status fehlt â†’ obligat!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`ER: ${S.bio.er}`});
+  if(!S.bio.pr) items.push({cls:'missing',icon:'âš ï¸',text:'PR-Status fehlt â†’ obligat!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`PR: ${S.bio.pr}`});
+  if(!S.bio.her2) items.push({cls:'missing',icon:'âš ï¸',text:'HER2-Status fehlt â†’ obligat (IHC â†’ ISH bei 2+)!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`HER2: ${S.bio.her2}`});
+  items.push({cls:'info',icon:'â„¹ï¸',text:`Ki-67: ${S.bio.ki67}% (Referenzlabor empfohlen bei Grenzwert 15â€“30%)`});
   if(S.bio.er==='negativ'&&S.bio.pr==='negativ'&&(S.bio.her2==='negativ'||S.bio.her2==='ultralow'))
-    items.push({cls:'missing',icon:'⚠️',text:'TNBC → BRCA1/2-Keimbahntestung obligat! PD-L1 CPS (bei metastasiert)'});
+    items.push({cls:'missing',icon:'âš ï¸',text:'TNBC â†’ BRCA1/2-Keimbahntestung obligat! PD-L1 CPS (bei metastasiert)'});
   if(!S.p.brca||S.p.brca==='unbekannt')
-    items.push({cls:'missing',icon:'⚠️',text:'BRCA1/2-Status? (obligat TNBC, ER+ <60J mit famil. Belastung)'});
+    items.push({cls:'missing',icon:'âš ï¸',text:'BRCA1/2-Status? (obligat TNBC, ER+ <60J mit famil. Belastung)'});
   if(S.bio.er==='positiv'&&(S.bio.her2==='negativ'||!S.bio.her2)&&(S.staging.N==='N0'||S.staging.N==='N1mi'))
-    items.push({cls:'info',icon:'ℹ️',text:'Multigentests (Oncotype DX, Mammaprint): Indikation prüfen bei pN0-1, T1-2, ER+/HER2−'});
+    items.push({cls:'info',icon:'â„¹ï¸',text:'Multigentests (Oncotype DX, Mammaprint): Indikation prÃ¼fen bei pN0-1, T1-2, ER+/HER2âˆ’'});
   return items;
 }
 function checklistCervix(){
   const items=[];
-  items.push({cls:'info',icon:'ℹ️',text:'Histologiesubtyp: SCC vs. Adenokarzinom (endozervikal vs. endometrioid)'});
-  if(!S.bio.pdl1) items.push({cls:'missing',icon:'⚠️',text:'PD-L1 CPS fehlt → obligat bei fortgeschrittenem/metastasiertem Stadium!'});
-  else items.push({cls:'ok',icon:'✅',text:`PD-L1 CPS: ${S.bio.pdl1}`});
-  items.push({cls:'info',icon:'ℹ️',text:'LVSI (nach OP) dokumentieren → Rezidivrisiko'});
-  items.push({cls:'info',icon:'ℹ️',text:'p16/Ki67-Dualfärbung (molekulare HPV-Assoziation)'});
-  items.push({cls:'info',icon:'ℹ️',text:'MSI/MMR-Status bei Rezidiv → Immuntherapie-Eligibilität'});
+  items.push({cls:'info',icon:'â„¹ï¸',text:'Histologiesubtyp: SCC vs. Adenokarzinom (endozervikal vs. endometrioid)'});
+  if(!S.bio.pdl1) items.push({cls:'missing',icon:'âš ï¸',text:'PD-L1 CPS fehlt â†’ obligat bei fortgeschrittenem/metastasiertem Stadium!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`PD-L1 CPS: ${S.bio.pdl1}`});
+  items.push({cls:'info',icon:'â„¹ï¸',text:'LVSI (nach OP) dokumentieren â†’ Rezidivrisiko'});
+  items.push({cls:'info',icon:'â„¹ï¸',text:'p16/Ki67-DualfÃ¤rbung (molekulare HPV-Assoziation)'});
+  items.push({cls:'info',icon:'â„¹ï¸',text:'MSI/MMR-Status bei Rezidiv â†’ Immuntherapie-EligibilitÃ¤t'});
   return items;
 }
 function checklistEndo(){
   const items=[];
-  if(!S.bio.hist) items.push({cls:'missing',icon:'⚠️',text:'Histologiesubtyp fehlt → obligat (endo G1/G2 vs. G3 vs. nicht-endo)!'});
-  if(!S.bio.pole||S.bio.pole==='unbekannt') items.push({cls:'missing',icon:'⚠️',text:'POLE-Exonukleasedomain-Mutationsanalyse fehlt → obligat FIGO 2023!'});
-  else items.push({cls:'ok',icon:'✅',text:`POLE: ${S.bio.pole}`});
-  if(!S.bio.msi||S.bio.msi==='unbekannt') items.push({cls:'missing',icon:'⚠️',text:'MMR-IHC (MLH1, MSH2, MSH6, PMS2) fehlt → obligat!'});
-  else items.push({cls:'ok',icon:'✅',text:`MMR/MSI: ${S.bio.msi}`});
-  if(!S.bio.p53||S.bio.p53==='unbekannt') items.push({cls:'missing',icon:'⚠️',text:'TP53-IHC / NGS fehlt → obligat für FIGO 2023 Staging!'});
-  else items.push({cls:'ok',icon:'✅',text:`TP53: ${S.bio.p53}`});
+  if(!S.bio.hist) items.push({cls:'missing',icon:'âš ï¸',text:'Histologiesubtyp fehlt â†’ obligat (endo G1/G2 vs. G3 vs. nicht-endo)!'});
+  if(!S.bio.pole||S.bio.pole==='unbekannt') items.push({cls:'missing',icon:'âš ï¸',text:'POLE-Exonukleasedomain-Mutationsanalyse fehlt â†’ obligat FIGO 2023!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`POLE: ${S.bio.pole}`});
+  if(!S.bio.msi||S.bio.msi==='unbekannt') items.push({cls:'missing',icon:'âš ï¸',text:'MMR-IHC (MLH1, MSH2, MSH6, PMS2) fehlt â†’ obligat!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`MMR/MSI: ${S.bio.msi}`});
+  if(!S.bio.p53||S.bio.p53==='unbekannt') items.push({cls:'missing',icon:'âš ï¸',text:'TP53-IHC / NGS fehlt â†’ obligat fÃ¼r FIGO 2023 Staging!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`TP53: ${S.bio.p53}`});
   if(S.bio.hist==='seroes'&&(!S.bio.her2||S.bio.her2==='unbekannt'))
-    items.push({cls:'missing',icon:'⚠️',text:'HER2-Status bei serösem EC fehlt → Trastuzumab-Indikation!'});
-  items.push({cls:'info',icon:'ℹ️',text:'ER/PR (für Progesteron-/Hormontherapie G1-G2)'});
-  items.push({cls:'info',icon:'ℹ️',text:'LVSI-Dokumentation (substanziell → Upstaging FIGO 2023)'});
+    items.push({cls:'missing',icon:'âš ï¸',text:'HER2-Status bei serÃ¶sem EC fehlt â†’ Trastuzumab-Indikation!'});
+  items.push({cls:'info',icon:'â„¹ï¸',text:'ER/PR (fÃ¼r Progesteron-/Hormontherapie G1-G2)'});
+  items.push({cls:'info',icon:'â„¹ï¸',text:'LVSI-Dokumentation (substanziell â†’ Upstaging FIGO 2023)'});
   return items;
 }
 function checklistOvar(){
   const items=[];
-  if(!S.bio.hist) items.push({cls:'missing',icon:'⚠️',text:'Histologiesubtyp fehlt → HGSC vs. LGSC vs. andere!'});
-  if(!S.p.brca||S.p.brca==='unbekannt') items.push({cls:'missing',icon:'⚠️',text:'BRCA1/2-Keimbahntestung fehlt → obligat bei ALLE Ovarialkarzinomen!'});
-  else items.push({cls:'ok',icon:'✅',text:`BRCA Keimbahn: ${S.p.brca}`});
-  if(!S.bio.hrd||S.bio.hrd==='unbekannt') items.push({cls:'missing',icon:'⚠️',text:'HRD-Score fehlt (auch non-BRCA) → PARP-Inhibitor-Entscheidung!'});
-  else items.push({cls:'ok',icon:'✅',text:`HRD: ${S.bio.hrd}`});
+  if(!S.bio.hist) items.push({cls:'missing',icon:'âš ï¸',text:'Histologiesubtyp fehlt â†’ HGSC vs. LGSC vs. andere!'});
+  if(!S.p.brca||S.p.brca==='unbekannt') items.push({cls:'missing',icon:'âš ï¸',text:'BRCA1/2-Keimbahntestung fehlt â†’ obligat bei ALLE Ovarialkarzinomen!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`BRCA Keimbahn: ${S.p.brca}`});
+  if(!S.bio.hrd||S.bio.hrd==='unbekannt') items.push({cls:'missing',icon:'âš ï¸',text:'HRD-Score fehlt (auch non-BRCA) â†’ PARP-Inhibitor-Entscheidung!'});
+  else items.push({cls:'ok',icon:'âœ…',text:`HRD: ${S.bio.hrd}`});
   if(S.bio.nac==='rezidiv'&&(!S.bio.pdl1||S.bio.pdl1==='unbekannt'))
-    items.push({cls:'missing',icon:'⚠️',text:'FRα-Status fehlt bei platinresistentem Rezidiv → Mirvetuximab-Eligibilität!'});
-  items.push({cls:'info',icon:'ℹ️',text:'MSI/MMR-Status (ggf. Immuntherapie im Rezidiv)'});
-  items.push({cls:'info',icon:'ℹ️',text:'Peritoneale Zytologie dokumentieren (FIGO IC)'});
+    items.push({cls:'missing',icon:'âš ï¸',text:'FRÎ±-Status fehlt bei platinresistentem Rezidiv â†’ Mirvetuximab-EligibilitÃ¤t!'});
+  items.push({cls:'info',icon:'â„¹ï¸',text:'MSI/MMR-Status (ggf. Immuntherapie im Rezidiv)'});
+  items.push({cls:'info',icon:'â„¹ï¸',text:'Peritoneale Zytologie dokumentieren (FIGO IC)'});
   return items;
 }
 function renderChecklist(items){
   return `<div class="chk-list">${items.map(i=>`<div class="chk-item ${i.cls}"><div class="chk-icon">${i.icon}</div><div>${i.text}</div></div>`).join('')}</div>`;
 }
 
-// ── SUPPORTIVMEDIZIN ──────────────────────────────────────────────────────────
+// â”€â”€ SUPPORTIVMEDIZIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function suppSection(cards){
   return `<div class="supp-section">${cards.map(c=>`<div class="supp-card"><div class="supp-label">${c.label}</div><div class="supp-content">${c.text}</div></div>`).join('')}</div>`;
 }
 function suppMamma(subtype){
   const cards=[];
   if(subtype==='tnbc-nac'||subtype==='her2-nac'){
-    cards.push({label:'🤢 Antiemese (HEC)',text:'NK1-Antagonist (Netupitant/Palonosetron 300/0,5mg p.o.) + Dexamethason 8–12mg i.v. + Olanzapin 5mg p.o. (MASCC). Vor Taxol-weekly: MEC-Schema (5HT3+Dexa).'});
-    cards.push({label:'🩸 G-CSF Prophylaxe',text:'Pegfilgrastim 6mg s.c. Tag 2 nach ddEC/Taxol: Primärprophylaxe obligat (FN-Risiko >20%). TCHP: Pegfilgrastim Tag 2 obligat (KEM-Standard).'});
+    cards.push({label:'ðŸ¤¢ Antiemese (HEC)',text:'NK1-Antagonist (Netupitant/Palonosetron 300/0,5mg p.o.) + Dexamethason 8â€“12mg i.v. + Olanzapin 5mg p.o. (MASCC). Vor Taxol-weekly: MEC-Schema (5HT3+Dexa).'});
+    cards.push({label:'ðŸ©¸ G-CSF Prophylaxe',text:'Pegfilgrastim 6mg s.c. Tag 2 nach ddEC/Taxol: PrimÃ¤rprophylaxe obligat (FN-Risiko >20%). TCHP: Pegfilgrastim Tag 2 obligat (KEM-Standard).'});
   }
   if(subtype==='cap'||subtype==='xeloda'){
-    cards.push({label:'🧬 DPYD-Testung',text:'Obligat vor Capecitabin/5-FU! DPYD*2A, *13, 2846A>T, HapB3. Heterozygot → Dosisreduktion 50%. Homozygot → Kontraindikation. Cave: Kein Brivudin ≤4 Wochen vor/nach Capecitabin!'});
-    cards.push({label:'🖐 Hand-Fuß-Syndrom',text:'Präventiv: Urea-Creme 10% 2×/d ab Zyklus 1. B6 50mg 3×/d. Bei HFS Grad 2–3: Dosisreduktion nach Schema.'});
+    cards.push({label:'ðŸ§¬ DPYD-Testung',text:'Obligat vor Capecitabin/5-FU! DPYD*2A, *13, 2846A>T, HapB3. Heterozygot â†’ Dosisreduktion 50%. Homozygot â†’ Kontraindikation. Cave: Kein Brivudin â‰¤4 Wochen vor/nach Capecitabin!'});
+    cards.push({label:'ðŸ– Hand-FuÃŸ-Syndrom',text:'PrÃ¤ventiv: Urea-Creme 10% 2Ã—/d ab Zyklus 1. B6 50mg 3Ã—/d. Bei HFS Grad 2â€“3: Dosisreduktion nach Schema.'});
   }
   if(subtype==='her2'||subtype==='her2-nac'){
-    cards.push({label:'❤️ Kardioprotection',text:'LVEF-Kontrolle vor Therapiebeginn (Echo/MRT), dann q3 Monate unter Trastuzumab. Grenzwert LVEF <55% oder Abfall ≥10% → Trastuzumab pausieren. Epirubicin-Gesamtdosis ≤900mg/m² beachten.'});
+    cards.push({label:'â¤ï¸ Kardioprotection',text:'LVEF-Kontrolle vor Therapiebeginn (Echo/MRT), dann q3 Monate unter Trastuzumab. Grenzwert LVEF <55% oder Abfall â‰¥10% â†’ Trastuzumab pausieren. Epirubicin-Gesamtdosis â‰¤900mg/mÂ² beachten.'});
   }
-  cards.push({label:'💊 Antiemese allg.',text:'LEC (weekly Taxol, T-DM1, T-DXd): Dexamethason 8mg i.v. ± 5HT3-Antagonist. MEC: 5HT3+Dexa. HEC (ddEC, cis): NK1+5HT3+Dexa+Olanzapin.'});
+  cards.push({label:'ðŸ’Š Antiemese allg.',text:'LEC (weekly Taxol, T-DM1, T-DXd): Dexamethason 8mg i.v. Â± 5HT3-Antagonist. MEC: 5HT3+Dexa. HEC (ddEC, cis): NK1+5HT3+Dexa+Olanzapin.'});
   return suppSection(cards);
 }
 function suppEndo(){
   return suppSection([
-    {label:'🤢 Antiemese',text:'Carbo+Pac (MEC): Netupitant/Palonosetron + Dexamethason 8mg i.v. Cisplatin (HEC): NK1+5HT3+Dexa+Olanzapin 5mg + Hydratation 2L.'},
-    {label:'🩸 G-CSF',text:'Carbo+Pac q21: Sekundärprophylaxe nach febriler Neutropenie. Bei enger Taktung (q14 off-label) Pegfilgrastim obligat.'},
-    {label:'🔎 Immuntherapie (irAE)',text:'Dostarlimab/Pembrolizumab: Vor Therapie TSH, LFT, Glukose, Kreatinin. Monitoring q3–6 Wo. Typische irAE: Thyreoiditis, Hepatitis, Pneumonitis, Kolitis. Bei Grad 3–4: sofort stoppen + Steroide.'},
-    {label:'💊 Supportiv',text:'Antikoagulation bei VTE-Risiko (Carbo+Pac: LMWH erwägen). Ca/Vit D bei Hormontherapie. Zahn-Clearance bei geplanter Knochentherapie.'}
+    {label:'ðŸ¤¢ Antiemese',text:'Carbo+Pac (MEC): Netupitant/Palonosetron + Dexamethason 8mg i.v. Cisplatin (HEC): NK1+5HT3+Dexa+Olanzapin 5mg + Hydratation 2L.'},
+    {label:'ðŸ©¸ G-CSF',text:'Carbo+Pac q21: SekundÃ¤rprophylaxe nach febriler Neutropenie. Bei enger Taktung (q14 off-label) Pegfilgrastim obligat.'},
+    {label:'ðŸ”Ž Immuntherapie (irAE)',text:'Dostarlimab/Pembrolizumab: Vor Therapie TSH, LFT, Glukose, Kreatinin. Monitoring q3â€“6 Wo. Typische irAE: Thyreoiditis, Hepatitis, Pneumonitis, Kolitis. Bei Grad 3â€“4: sofort stoppen + Steroide.'},
+    {label:'ðŸ’Š Supportiv',text:'Antikoagulation bei VTE-Risiko (Carbo+Pac: LMWH erwÃ¤gen). Ca/Vit D bei Hormontherapie. Zahn-Clearance bei geplanter Knochentherapie.'}
   ]);
 }
 function suppOvar(){
   return suppSection([
-    {label:'🤢 Antiemese',text:'Carbo+Pac (MEC/HEC): Netupitant/Palonosetron 300/0,5mg p.o. + Dexamethason 12mg i.v. + Clemastin 2mg + Cimetidin 300mg i.v. (Allergieprophylaxe Taxol). Carbo+Gem: Netupitant/Palonosetron + Dexa 8mg.'},
-    {label:'🩸 G-CSF',text:'Carbo+Pac q21: Sekundärprophylaxe nach FN. Wöchentliches Paclitaxel: kein G-CSF i.d.R. nötig. Bei Dosisdichteregimes Pegfilgrastim Tag 2 obligat.'},
-    {label:'💊 PARP-Inhibitor Monitoring',text:'Olaparib: CBC q4W Monat 1–3, dann q12W. Niraparib: RR-Kontrolle wöchentlich Monat 1–2 (Hypertension!), Thrombozyten wöchentlich Monat 1. Rucaparib: LFT q4W.'},
-    {label:'🦴 Knochenprotection',text:'Knochenmetastasen: Zoledronat 4mg i.v. q4W oder Denosumab 120mg s.c. q4W. Zahnarzt-Clearance vor Beginn (Kiefernekrose-Prophylaxe). Ca 500mg + Vit D 400IE tägl.'}
+    {label:'ðŸ¤¢ Antiemese',text:'Carbo+Pac (MEC/HEC): Netupitant/Palonosetron 300/0,5mg p.o. + Dexamethason 12mg i.v. + Clemastin 2mg + Cimetidin 300mg i.v. (Allergieprophylaxe Taxol). Carbo+Gem: Netupitant/Palonosetron + Dexa 8mg.'},
+    {label:'ðŸ©¸ G-CSF',text:'Carbo+Pac q21: SekundÃ¤rprophylaxe nach FN. WÃ¶chentliches Paclitaxel: kein G-CSF i.d.R. nÃ¶tig. Bei Dosisdichteregimes Pegfilgrastim Tag 2 obligat.'},
+    {label:'ðŸ’Š PARP-Inhibitor Monitoring',text:'Olaparib: CBC q4W Monat 1â€“3, dann q12W. Niraparib: RR-Kontrolle wÃ¶chentlich Monat 1â€“2 (Hypertension!), Thrombozyten wÃ¶chentlich Monat 1. Rucaparib: LFT q4W.'},
+    {label:'ðŸ¦´ Knochenprotection',text:'Knochenmetastasen: Zoledronat 4mg i.v. q4W oder Denosumab 120mg s.c. q4W. Zahnarzt-Clearance vor Beginn (Kiefernekrose-Prophylaxe). Ca 500mg + Vit D 400IE tÃ¤gl.'}
   ]);
 }
 
-// ── STEP 4: RECOMMENDATION FRAME ─────────────────────────────────────────────
+// â”€â”€ STEP 4: RECOMMENDATION FRAME â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderStep4(){
   let html='';
   try{
@@ -677,15 +676,15 @@ function renderStep4(){
     else if(S.type==='ovar') html=recOvar();
     else if(S.type==='vulva') html=recVulva();
   }catch(e){
-    html=`<div class="warn-box">⚠ Bitte alle Felder ausfüllen und erneut versuchen.</div>`;
+    html=`<div class="warn-box">âš  Bitte alle Felder ausfÃ¼llen und erneut versuchen.</div>`;
   }
-  html+=`<div class="ref">📚 AWMF S3-Leitlinien Mamma/Cervix/Endo/Ovar/Vulva (2021–2024). ESMO Guidelines 2024. AGO Mamma 2024. KEYNOTE-522/826/A18, RUBY/ENGOT-EN6, SOLO-1, PAOLA-1, PRIMA, KATHERINE, MONARCH-E, OlympiA, CREATE-X, DESTINY-Breast03/04/06, CLEOPATRA, GROINSS-V-II. KEM Chemostandards 02/2024 (Prof. Kümmel / Dr. Heitz / Prof. Harter). Vulvakarzinom-Empfehlungen: Piczlewicz 2025.</div>`;
-  html+=`<div class="disc">⚠️ <strong>Disclaimer:</strong> Dieses Tool dient als Entscheidungshilfe für die Tumorkonferenz. Alle Empfehlungen bedürfen der individuellen ärztlichen Überprüfung. Keine Haftung für Behandlungsentscheidungen. Protokolldosen sind gegen KOF, Nierenfunktion und Komorbiditäten anzupassen.</div>`;
-  html+=`<button class="new-case-btn" onclick="resetAll()">↺ Neuen Fall eingeben</button>`;
+  html+=`<div class="ref">ðŸ“š AWMF S3-Leitlinien Mamma/Cervix/Endo/Ovar/Vulva (2021â€“2024). ESMO Guidelines 2024. AGO Mamma 2024. KEYNOTE-522/826/A18, RUBY/ENGOT-EN6, SOLO-1, PAOLA-1, PRIMA, KATHERINE, MONARCH-E, OlympiA, CREATE-X, DESTINY-Breast03/04/06, CLEOPATRA, GROINSS-V-II. KEM Chemostandards 02/2024 (Prof. KÃ¼mmel / Dr. Heitz / Prof. Harter). Vulvakarzinom-Empfehlungen: Piczlewicz 2025.</div>`;
+  html+=`<div class="disc">âš ï¸ <strong>Disclaimer:</strong> Dieses Tool dient als Entscheidungshilfe fÃ¼r die Tumorkonferenz. Alle Empfehlungen bedÃ¼rfen der individuellen Ã¤rztlichen ÃœberprÃ¼fung. Keine Haftung fÃ¼r Behandlungsentscheidungen. Protokolldosen sind gegen KOF, Nierenfunktion und KomorbiditÃ¤ten anzupassen.</div>`;
+  html+=`<button class="new-case-btn" onclick="resetAll()">â†º Neuen Fall eingeben</button>`;
   document.getElementById('main').innerHTML=html;
 }
 
-// ── MAMMA ─────────────────────────────────────────────────────────────────────
+// â”€â”€ MAMMA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function recMamma(){
   const{T,N,M,grade,stagingType}=S.staging;
   const{er,pr,her2,ki67,nac,res,brca}={...S.bio,...{brca:S.p.brca}};
@@ -703,58 +702,58 @@ function recMamma(){
   // Pathologie-Checkliste
   const chkItems=checklistMamma();
   const hasMissing=chkItems.some(i=>i.cls==='missing');
-  html+=coll('chk-mamma',hasMissing?'⚠️':'✅','Pathologie-Checkliste',renderChecklist(chkItems));
+  html+=coll('chk-mamma',hasMissing?'âš ï¸':'âœ…','Pathologie-Checkliste',renderChecklist(chkItems));
 
-  // ── POST-NAC ──────────────────────────────────────────────────────────────
+  // â”€â”€ POST-NAC â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if(post){
     const pcr=res==='pcr';
     if(isTNBC){
       if(pcr){
-        html+=sec('immuno','Post-NAC TNBC – pCR','✅',
-          [`pCR (ypT0 ypN0) erreicht – exzellente Prognose ${ago('++')}`,
+        html+=sec('immuno','Post-NAC TNBC â€“ pCR','âœ…',
+          [`pCR (ypT0 ypN0) erreicht â€“ exzellente Prognose ${ago('++')}`,
            'Surveillance, kein weiteres Zytostatikum indiziert',
-           isBRCA?`BRCA-positiv: Olaparib adjuvant 300mg 2×/d × 1 Jahr erwägen (OlympiA) ${ago('++')}`:'',
-           'Pembrolizumab (KEYNOTE-522) perioperativ: 9 Zyklen adjuvant abschließen!'].filter(Boolean));
+           isBRCA?`BRCA-positiv: Olaparib adjuvant 300mg 2Ã—/d Ã— 1 Jahr erwÃ¤gen (OlympiA) ${ago('++')}`:'',
+           'Pembrolizumab (KEYNOTE-522) perioperativ: 9 Zyklen adjuvant abschlieÃŸen!'].filter(Boolean));
       } else {
-        html+=sec('chemo','Post-NAC TNBC – non-pCR','💊',
-          [`Residualtumor → Eskalationstherapie obligat!`,
-           `Capecitabin 2×1000mg/m² p.o. d1–14 q21 × 8 Zyklen (CREATE-X) ${ago('++')}`,
-           `BRCA-positiv: Olaparib 300mg 2×/d × 1 Jahr (OlympiA; ohne vorherige Capecitabin) ${ago('++')}`,
-           `BRCA-negativ, non-pCR nach KEYNOTE-522-Regime: Pembrolizumab 9 adj. Zyklen abschließen`],
-          [{name:'Capecitabin (KEM)',detail:'2×1000mg/m² p.o. d1–14 q21 × 8 Zyklen (KEM-Standard nach CREATE-X). Max. 5000mg/d. Cave: DPYD-Testung vor Therapiebeginn! Kein Brivudin bis 4 Wo. danach.'},
-           {name:'Olaparib (OlympiA)',detail:'300mg (2×150mg Tbl.) p.o. morgens + abends × 1 Jahr. Beginn ≥4 Wo. nach letzter Chemo. Reduktion: 250→200mg 2×/d bei Toxizität.'}]);
-        html+=study('DESTINY-Breast09 / TROPION-Breast04','Eskalationskonzepte nach TNBC non-pCR: ADC-Studien mit T-DXd oder Datopotamab für hochrisiko Residualtumor, aktuell Studienzugang prüfen.');
+        html+=sec('chemo','Post-NAC TNBC â€“ non-pCR','ðŸ’Š',
+          [`Residualtumor â†’ Eskalationstherapie obligat!`,
+           `Capecitabin 2Ã—1000mg/mÂ² p.o. d1â€“14 q21 Ã— 8 Zyklen (CREATE-X) ${ago('++')}`,
+           `BRCA-positiv: Olaparib 300mg 2Ã—/d Ã— 1 Jahr (OlympiA; ohne vorherige Capecitabin) ${ago('++')}`,
+           `BRCA-negativ, non-pCR nach KEYNOTE-522-Regime: Pembrolizumab 9 adj. Zyklen abschlieÃŸen`],
+          [{name:'Capecitabin (KEM)',detail:'2Ã—1000mg/mÂ² p.o. d1â€“14 q21 Ã— 8 Zyklen (KEM-Standard nach CREATE-X). Max. 5000mg/d. Cave: DPYD-Testung vor Therapiebeginn! Kein Brivudin bis 4 Wo. danach.'},
+           {name:'Olaparib (OlympiA)',detail:'300mg (2Ã—150mg Tbl.) p.o. morgens + abends Ã— 1 Jahr. Beginn â‰¥4 Wo. nach letzter Chemo. Reduktion: 250â†’200mg 2Ã—/d bei ToxizitÃ¤t.'}]);
+        html+=study('DESTINY-Breast09 / TROPION-Breast04','Eskalationskonzepte nach TNBC non-pCR: ADC-Studien mit T-DXd oder Datopotamab fÃ¼r hochrisiko Residualtumor, aktuell Studienzugang prÃ¼fen.');
       }
     }
     if(isHER2pos){
       if(pcr){
-        html+=sec('target','Post-NAC HER2+ – pCR','✅',
-          [`pCR erreicht → Pertuzumab + Trastuzumab fortführen ${ago('++')}`,
-           'Pertuzumab 420mg + Trastuzumab 6mg/kg i.v. q21 × 14 Zyklen (ggf. bereits begonnen)',
-           'Gesamtdauer Trastuzumab: 1 Jahr','Oral-Erhaltung mit Neratinib 240mg/d × 1 Jahr bei HER2+/HR+ erwägen (ExteNET)']);
+        html+=sec('target','Post-NAC HER2+ â€“ pCR','âœ…',
+          [`pCR erreicht â†’ Pertuzumab + Trastuzumab fortfÃ¼hren ${ago('++')}`,
+           'Pertuzumab 420mg + Trastuzumab 6mg/kg i.v. q21 Ã— 14 Zyklen (ggf. bereits begonnen)',
+           'Gesamtdauer Trastuzumab: 1 Jahr','Oral-Erhaltung mit Neratinib 240mg/d Ã— 1 Jahr bei HER2+/HR+ erwÃ¤gen (ExteNET)']);
       } else {
-        html+=sec('target','Post-NAC HER2+ – non-pCR','💊',
-          [`T-DM1 3,6mg/kg i.v. q21 × 14 Zyklen (KATHERINE) ${ago('++')}`,
+        html+=sec('target','Post-NAC HER2+ â€“ non-pCR','ðŸ’Š',
+          [`T-DM1 3,6mg/kg i.v. q21 Ã— 14 Zyklen (KATHERINE) ${ago('++')}`,
            'Zyklus 1: 90min i.v.; ab Zyklus 2: 30min','Start binnen 12 Wo. nach letzter NAC',
-           'PVC-freies System mit 0,22µm Filter verwenden'],
-          [{name:'T-DM1 (KEM)',detail:'T-DM1 3,6mg/kg i.v. q21 × 14 Zyklen. Zyklus 1: 90min i.v.; ab Zyklus 2: 30min. Start binnen 12 Wo. postoperativ. PVC-freies System mit 0,22µm Filter.'}]);
+           'PVC-freies System mit 0,22Âµm Filter verwenden'],
+          [{name:'T-DM1 (KEM)',detail:'T-DM1 3,6mg/kg i.v. q21 Ã— 14 Zyklen. Zyklus 1: 90min i.v.; ab Zyklus 2: 30min. Start binnen 12 Wo. postoperativ. PVC-freies System mit 0,22Âµm Filter.'}]);
       }
     }
     if(isLuminal&&!isHER2pos){
-      html+=sec('endo','Post-NAC ER+ – Endokrine Konsolidierung','💊',
+      html+=sec('endo','Post-NAC ER+ â€“ Endokrine Konsolidierung','ðŸ’Š',
         [`Standardendokrintherapie nach Menopausenstatus ${ago('++')}`,
-         'Adjuvantes Abemaciclib (MONARCH-E) bei N2/N3 oder N1+G3/T3/Ki67≥20% erwägen',
+         'Adjuvantes Abemaciclib (MONARCH-E) bei N2/N3 oder N1+G3/T3/Ki67â‰¥20% erwÃ¤gen',
          isBRCA?`BRCA-positiv: Olaparib (OlympiA) nach abgeschlossener Chemotherapie ${ago('++')}`:''].filter(Boolean));
     }
-    html+=coll('supp-postnac','💊','Supportivmedizin',suppMamma(isTNBC?'cap':(isHER2pos?'her2':'tnbc-nac')));
+    html+=coll('supp-postnac','ðŸ’Š','Supportivmedizin',suppMamma(isTNBC?'cap':(isHER2pos?'her2':'tnbc-nac')));
     return html;
   }
 
-  // ── PRIMÄRTHERAPIE (klinisch/pathologisch) ────────────────────────────────
+  // â”€â”€ PRIMÃ„RTHERAPIE (klinisch/pathologisch) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if(meta){
     // Metastasiert
     if(isHER2pos){
-      html+=sec('target','Metastasiertes Mammakarzinom – HER2+','🎯',
+      html+=sec('target','Metastasiertes Mammakarzinom â€“ HER2+','ðŸŽ¯',
         [`1L: Pertuzumab + Trastuzumab + Docetaxel/Paclitaxel (CLEOPATRA) ${ago('++')}`,
          `2L: Trastuzumab-Deruxtecan (T-DXd) 5,4mg/kg i.v. q21 (DESTINY-Breast03) ${ago('++')}`,
          `3L: T-DM1 3,6mg/kg i.v. q21; Tucatinib + Capecitabin + Trastuzumab ${ago('+')}`,
@@ -762,80 +761,80 @@ function recMamma(){
     }
     if(isHER2low||isHER2ul){
       const dbLabel=isHER2low?`DESTINY-Breast04 ${ago('+')}`:  `DESTINY-Breast06 (HER2-ultralow) ${ago('+/-')}`;
-      html+=sec('target','HER2-low/-ultralow – T-DXd Indikation','🎯',
-        [`HER2-low (IHC 1+ oder 2+/ISH−): Trastuzumab-Deruxtecan 5,4mg/kg i.v. q21 nach ≥1 Chemo ${dbLabel}`,
-         isHER2ul?`HER2-ultralow (IHC >0 <1+): T-DXd emerging data (DESTINY-Breast06, 2024) – Studieneinschluss prüfen!`:'',
-         'Prüfen: ER+/HER2-low nach CDK4/6i-Versagen oder ER−/HER2-low nach 1–2 Linien Chemo',
-         'Cave: ILD/Pneumonitis als spezifische Toxizität (Grad 3–4 ~2%) – Engmaschige Bildgebung!'].filter(Boolean));
-      if(isHER2ul) html+=study('DESTINY-Breast06','HER2-ultralow zeigte signifikante PFS-Verbesserung ggü. Chemotherapie (2024). Aktuelle Zulassungserweiterung prüfen. Ggf. Einschluss in Follow-up Studien.');
+      html+=sec('target','HER2-low/-ultralow â€“ T-DXd Indikation','ðŸŽ¯',
+        [`HER2-low (IHC 1+ oder 2+/ISHâˆ’): Trastuzumab-Deruxtecan 5,4mg/kg i.v. q21 nach â‰¥1 Chemo ${dbLabel}`,
+         isHER2ul?`HER2-ultralow (IHC >0 <1+): T-DXd emerging data (DESTINY-Breast06, 2024) â€“ Studieneinschluss prÃ¼fen!`:'',
+         'PrÃ¼fen: ER+/HER2-low nach CDK4/6i-Versagen oder ERâˆ’/HER2-low nach 1â€“2 Linien Chemo',
+         'Cave: ILD/Pneumonitis als spezifische ToxizitÃ¤t (Grad 3â€“4 ~2%) â€“ Engmaschige Bildgebung!'].filter(Boolean));
+      if(isHER2ul) html+=study('DESTINY-Breast06','HER2-ultralow zeigte signifikante PFS-Verbesserung ggÃ¼. Chemotherapie (2024). Aktuelle Zulassungserweiterung prÃ¼fen. Ggf. Einschluss in Follow-up Studien.');
     }
     if(isLuminal&&!isHER2pos){
-      html+=sec('endo','Metastasiertes ER+ HER2− Mammakarzinom','💊',
+      html+=sec('endo','Metastasiertes ER+ HER2âˆ’ Mammakarzinom','ðŸ’Š',
         [`1L: CDK4/6-Inhibitor + Aromatase-Inhibitor (Palbociclib/Ribociclib/Abemaciclib) ${ago('++')}`,
-         `2L nach CDK4/6i: Fulvestrant ± CDK4/6i; ESR1-Mutation → Elacestrant ${ago('+')}`,
+         `2L nach CDK4/6i: Fulvestrant Â± CDK4/6i; ESR1-Mutation â†’ Elacestrant ${ago('+')}`,
          `BRCA-mutiert: Olaparib oder Talazoparib mono ${ago('++')}`,
          `Viszeral-Krise: Chemotherapie (Capecitabin, weekly Pac, Anthrazyklin-naive: AC)`]);
     }
     if(isTNBC){
-      html+=sec('immuno','Metastasiertes TNBC','💉',
-        [`1L PD-L1+ (CPS≥10): Pembrolizumab + Chemotherapie (KEYNOTE-355) ${ago('++')}`,
-         `BRCA-mutiert: Olaparib 300mg 2×/d oder Talazoparib 1mg/d mono ${ago('++')}`,
+      html+=sec('immuno','Metastasiertes TNBC','ðŸ’‰',
+        [`1L PD-L1+ (CPSâ‰¥10): Pembrolizumab + Chemotherapie (KEYNOTE-355) ${ago('++')}`,
+         `BRCA-mutiert: Olaparib 300mg 2Ã—/d oder Talazoparib 1mg/d mono ${ago('++')}`,
          `HER2-low/ultralow: T-DXd (s.o.) ${ago('+')}`,
-         `Sacituzumab govitecan 10mg/kg d1,8 q21 nach ≥2 Linien (ASCENT) ${ago('++')}`,
+         `Sacituzumab govitecan 10mg/kg d1,8 q21 nach â‰¥2 Linien (ASCENT) ${ago('++')}`,
          `Antibody-Drug-Conjugates bevorzugen vor Standardchemo im Rezidiv`]);
     }
-    html+=coll('supp-meta','💊','Supportivmedizin',suppMamma(isHER2pos?'her2':(isTNBC?'tnbc-nac':'tnbc-nac')));
+    html+=coll('supp-meta','ðŸ’Š','Supportivmedizin',suppMamma(isHER2pos?'her2':(isTNBC?'tnbc-nac':'tnbc-nac')));
     return html;
   }
 
-  // ── FRÜHE / LOKAL FORTGESCHRITTENE ERKRANKUNG (M0) ───────────────────────
+  // â”€â”€ FRÃœHE / LOKAL FORTGESCHRITTENE ERKRANKUNG (M0) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if(isTNBC){
     if(nac==='ja'||T>='T2'||N!=='N0'){
-      html+=sec('chemo','Neoadjuvante Therapie TNBC','💊',
+      html+=sec('chemo','Neoadjuvante Therapie TNBC','ðŸ’Š',
         [`Anthrazyklin/Taxan-basiert + Pembrolizumab (KEYNOTE-522) ${ago('++')}`,
          'Indikation cT2+ oder cN+ oder cT1c mit Hochrisikomerkmalen',
-         'Carboplatin AUC5 d1 + Paclitaxel 80mg/m² d1,8,15 q3w × 4 → ddEC × 4',
+         'Carboplatin AUC5 d1 + Paclitaxel 80mg/mÂ² d1,8,15 q3w Ã— 4 â†’ ddEC Ã— 4',
          'Pembrolizumab 200mg i.v. q21 perioperativ + 9 Zyklen adjuvant',
          `Carboplatin-Zusatz verbessert pCR-Rate bei TNBC ${ago('++')}`,
          isBRCA?`BRCA-positiv: Olaparib adjuvant nach NAC (OlympiA) bei non-pCR ${ago('++')}`:''].filter(Boolean),
-        [{name:'KEYNOTE-522 Regime (KEM)',detail:'Carbo AUC5 d1 + Pac 80mg/m² d1,8,15 q3w × 4, dann ddEC (Epirubicin 90mg/m² + Cyclo 600mg/m² q14 × 4). Pembrolizumab 200mg i.v. q3w periop. + 9 adj. Zyklen. Premedikation: Netupitant/Palonosetron + Olanzapin 5mg p.o. + Dexamethason 8mg i.v. + Uromitexan. Pegfilgrastim Tag 2 obligat.'}]);
-      html+=study('NSABP B-59 / IMpassion031','Atezolizumab-basierte Alternativen bei PD-L1+ TNBC oder bei Pembrolizumab-Unverträglichkeit. Aktuelle Studienzugänge prüfen.');
+        [{name:'KEYNOTE-522 Regime (KEM)',detail:'Carbo AUC5 d1 + Pac 80mg/mÂ² d1,8,15 q3w Ã— 4, dann ddEC (Epirubicin 90mg/mÂ² + Cyclo 600mg/mÂ² q14 Ã— 4). Pembrolizumab 200mg i.v. q3w periop. + 9 adj. Zyklen. Premedikation: Netupitant/Palonosetron + Olanzapin 5mg p.o. + Dexamethason 8mg i.v. + Uromitexan. Pegfilgrastim Tag 2 obligat.'}]);
+      html+=study('NSABP B-59 / IMpassion031','Atezolizumab-basierte Alternativen bei PD-L1+ TNBC oder bei Pembrolizumab-UnvertrÃ¤glichkeit. Aktuelle StudienzugÃ¤nge prÃ¼fen.');
     } else {
-      html+=sec('surg','Primär-OP empfohlen (Low-risk TNBC)','🔪',
-        ['cT1a–b, N0, M0: Primäre BET oder Mastektomie + SLNB',
-         'Adjuvante Chemotherapie: Capecitabin oder TC × 4 bei pT1c+ oder pN+',
+      html+=sec('surg','PrimÃ¤r-OP empfohlen (Low-risk TNBC)','ðŸ”ª',
+        ['cT1aâ€“b, N0, M0: PrimÃ¤re BET oder Mastektomie + SLNB',
+         'Adjuvante Chemotherapie: Capecitabin oder TC Ã— 4 bei pT1c+ oder pN+',
          isBRCA?`BRCA-positiv: Risikoreduktions-OP (bilaterale Mastektomie) besprechen`:''].filter(Boolean));
     }
   }
   if(isHER2pos){
-    html+=sec('target','Neoadjuvante Therapie HER2+','🎯',
-      [`TCHP × 6 Zyklen (NEOSPHERE/CLEOPATRA) ${ago('++')}`,
-       'Trastuzumab 8→6mg/kg i.v. + Pertuzumab 840→420mg i.v. d1 q21',
+    html+=sec('target','Neoadjuvante Therapie HER2+','ðŸŽ¯',
+      [`TCHP Ã— 6 Zyklen (NEOSPHERE/CLEOPATRA) ${ago('++')}`,
+       'Trastuzumab 8â†’6mg/kg i.v. + Pertuzumab 840â†’420mg i.v. d1 q21',
        'Tag 2: Pegfilgrastim 6mg s.c. (obligat!)',
        'Erste Trastuzumab-Gabe: 6h Nachbeobachtung!',
-       `pCR nach TCHP → Pertuzumab + Trastuzumab 14 Zyklen adjuvant ${ago('++')}`,
-       `non-pCR → T-DM1 (KATHERINE) ${ago('++')}`],
-      [{name:'TCHP (KEM)',detail:'Docetaxel 75mg/m² + Carboplatin AUC6 i.v. d1 q21 × 6. Trastuzumab 8→6mg/kg i.v. + Pertuzumab 840→420mg i.v. d1 q21. Tag 2: Pegfilgrastim s.c. Trastuzumab 1. Gabe: 6h Nachbeobachtung!'}]);
-    html+=coll('supp-her2','💊','Supportivmedizin',suppMamma('her2-nac'));
+       `pCR nach TCHP â†’ Pertuzumab + Trastuzumab 14 Zyklen adjuvant ${ago('++')}`,
+       `non-pCR â†’ T-DM1 (KATHERINE) ${ago('++')}`],
+      [{name:'TCHP (KEM)',detail:'Docetaxel 75mg/mÂ² + Carboplatin AUC6 i.v. d1 q21 Ã— 6. Trastuzumab 8â†’6mg/kg i.v. + Pertuzumab 840â†’420mg i.v. d1 q21. Tag 2: Pegfilgrastim s.c. Trastuzumab 1. Gabe: 6h Nachbeobachtung!'}]);
+    html+=coll('supp-her2','ðŸ’Š','Supportivmedizin',suppMamma('her2-nac'));
   }
   if(isLuminal&&!isHER2pos){
     const highRisk=grade==='G3'||N==='N2'||N==='N3'||ki>=30;
     const intermed=ki>=15&&ki<30&&(N==='N0'||N==='N1');
-    html+=sec('endo','Therapieplanung ER+ HER2−','💊',
-      [highRisk?`Hochrisiko (G3/N2-3/Ki67≥30%): Neoadjuvante Chemotherapie erwägen ${ago('+')}`:
-       intermed?`Intermediärrisiko: Multigentests (Oncotype DX, Mammaprint) zur Chemo-Entscheidung ${ago('++')}`:
-       `Niedriges Risiko (G1-2, N0, Ki67<15%): Primär-OP + adjuvante Endokriintherapie ${ago('++')}`,
-       'Adjuvante Endokrintherapie: AI 5 Jahre (postmenop.) / Tamoxifen + OFS (prämenop.)',
-       `Abemaciclib + AI 2 Jahre bei N2–3 oder N1+G3/Ki67≥20% (MONARCH-E) ${ago('++')}`,
+    html+=sec('endo','Therapieplanung ER+ HER2âˆ’','ðŸ’Š',
+      [highRisk?`Hochrisiko (G3/N2-3/Ki67â‰¥30%): Neoadjuvante Chemotherapie erwÃ¤gen ${ago('+')}`:
+       intermed?`IntermediÃ¤rrisiko: Multigentests (Oncotype DX, Mammaprint) zur Chemo-Entscheidung ${ago('++')}`:
+       `Niedriges Risiko (G1-2, N0, Ki67<15%): PrimÃ¤r-OP + adjuvante Endokriintherapie ${ago('++')}`,
+       'Adjuvante Endokrintherapie: AI 5 Jahre (postmenop.) / Tamoxifen + OFS (prÃ¤menop.)',
+       `Abemaciclib + AI 2 Jahre bei N2â€“3 oder N1+G3/Ki67â‰¥20% (MONARCH-E) ${ago('++')}`,
        isBRCA?`BRCA-positiv nach Chemo: Olaparib 1 Jahr (OlympiA) ${ago('++')}`:'',
-       intermed?`Multigentestindikation: pT1-2, pN0-1, ER+/HER2−, Postmenopause ${ago('++')}`:''
+       intermed?`Multigentestindikation: pT1-2, pN0-1, ER+/HER2âˆ’, Postmenopause ${ago('++')}`:''
       ].filter(Boolean));
   }
-  html+=coll('supp-mamma','💊','Supportivmedizin',suppMamma(isTNBC?'tnbc-nac':(isHER2pos?'her2':'cap')));
+  html+=coll('supp-mamma','ðŸ’Š','Supportivmedizin',suppMamma(isTNBC?'tnbc-nac':(isHER2pos?'her2':'cap')));
   return html;
 }
 
-// ── CERVIX ────────────────────────────────────────────────────────────────────
+// â”€â”€ CERVIX â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function recCervix(){
   const{figo}=S.staging;
   const{fertility}=S.p;
@@ -843,96 +842,96 @@ function recCervix(){
   let html='';
 
   // Pathologie-Checkliste
-  html+=coll('chk-cervix',checklistCervix().some(i=>i.cls==='missing')?'⚠️':'✅','Pathologie-Checkliste',renderChecklist(checklistCervix()));
+  html+=coll('chk-cervix',checklistCervix().some(i=>i.cls==='missing')?'âš ï¸':'âœ…','Pathologie-Checkliste',renderChecklist(checklistCervix()));
 
   if(figo==='IA1'){
-    html+=sec('surg','Stadium IA1 (≤3mm Stromainvasion)','🔪',
-      [fertility==='ja'?'Fertilitätswunsch: Konisation mit freiem Resektionsrand + SLNB (≥3mm freier Rand)'
+    html+=sec('surg','Stadium IA1 (â‰¤3mm Stromainvasion)','ðŸ”ª',
+      [fertility==='ja'?'FertilitÃ¤tswunsch: Konisation mit freiem Resektionsrand + SLNB (â‰¥3mm freier Rand)'
        :'Einfache Hysterektomie (SLNB wenn LVSI positiv)',
-       'LVSI positiv → modifiziert-radikale Hysterektomie oder SRS',
+       'LVSI positiv â†’ modifiziert-radikale Hysterektomie oder SRS',
        'Keine adjuvante Therapie bei R0, LVSI-negativ']);
-  html+=learn('cx-ia1','Hintergrund: Stadium IA – LVSI & Resektionsrand',`
+  html+=learn('cx-ia1','Hintergrund: Stadium IA â€“ LVSI & Resektionsrand',`
 <h4>Warum keine Sentinel-LNB bei IA1 ohne LVSI?</h4>
-<p>Stromainvasion ≤3mm ohne LVSI: Risiko inguinaler LK-Metastasen <span class="hi">&lt;1%</span>. Sentinel-LNB wäre reines Overtreatment. Bei LVSI-positiv steigt das LK-Risiko auf ~7% – dann Sentinel oder modifiziert-radikale Hysterektomie.</p>
-<h4>Warum ≥3mm freier Resektionsrand?</h4>
-<p>Rand ≥3mm → Rezidivrisiko ~5%. Knapper Rand (&lt;3mm) → ~20% Rezidivrisiko (Bogani 2020, Lancet Oncol). Re-Konisation empfohlen wenn Rand nicht sicher frei.</p>
+<p>Stromainvasion â‰¤3mm ohne LVSI: Risiko inguinaler LK-Metastasen <span class="hi">&lt;1%</span>. Sentinel-LNB wÃ¤re reines Overtreatment. Bei LVSI-positiv steigt das LK-Risiko auf ~7% â€“ dann Sentinel oder modifiziert-radikale Hysterektomie.</p>
+<h4>Warum â‰¥3mm freier Resektionsrand?</h4>
+<p>Rand â‰¥3mm â†’ Rezidivrisiko ~5%. Knapper Rand (&lt;3mm) â†’ ~20% Rezidivrisiko (Bogani 2020, Lancet Oncol). Re-Konisation empfohlen wenn Rand nicht sicher frei.</p>
 <h4>Was bedeutet LVSI?</h4>
-<p>Lymphovascular Space Invasion = Einbruch in Lymph- oder Blutgefäße. Beim Zervixkarzinom Stadium IA der <span class="hi">wichtigste Risikofaktor</span> für LK-Beteiligung und bestimmt das operative Vorgehen.</p>`);
+<p>Lymphovascular Space Invasion = Einbruch in Lymph- oder BlutgefÃ¤ÃŸe. Beim Zervixkarzinom Stadium IA der <span class="hi">wichtigste Risikofaktor</span> fÃ¼r LK-Beteiligung und bestimmt das operative Vorgehen.</p>`);
   } else if(figo==='IA2'){
-    html+=sec('surg','Stadium IA2','🔪',
-      [fertility==='ja'?'Fertilitätswunsch: Trachelektomie (radikale) + pelvine LND'
+    html+=sec('surg','Stadium IA2','ðŸ”ª',
+      [fertility==='ja'?'FertilitÃ¤tswunsch: Trachelektomie (radikale) + pelvine LND'
        :'Radikale Hysterektomie (Typ IB) + pelvine LND (laparoskopisch)',
-       'LVSI positiv / LK positiv: Postoperative Radiochemotherapie erwägen']);
+       'LVSI positiv / LK positiv: Postoperative Radiochemotherapie erwÃ¤gen']);
   } else if(['IB1','IB2','IIA1'].includes(figo)){
-    html+=sec('surg',`Kurativ: Stadium ${figo} – Chirurgie oder RCT möglich`,'🔪',
-      [`Radikale Hysterektomie Typ IB–C + pelvine LND ± paraaortale LND (Sentinel möglich) ${ago('++')}`,
-       'Alternative: Primäre Radiochemotherapie bei OP-Risikofaktoren',
-       'Adjuvante RCT bei positiven LK, positiven Resektionsrändern oder parametrialer Invasion (Sedlis/Peters-Kriterien)'],
-      [{name:'Cisplatin konkomitant',detail:'Cisplatin 40mg/m² i.v. wöchentlich × 5–6 Zyklen parallel zur EBRT. Hydratation: 1000ml Jonosteril vor + nach Infusion. Cave: Nierenfunktion (GFR ≥50) + Hörkontrolle.'}]);
+    html+=sec('surg',`Kurativ: Stadium ${figo} â€“ Chirurgie oder RCT mÃ¶glich`,'ðŸ”ª',
+      [`Radikale Hysterektomie Typ IBâ€“C + pelvine LND Â± paraaortale LND (Sentinel mÃ¶glich) ${ago('++')}`,
+       'Alternative: PrimÃ¤re Radiochemotherapie bei OP-Risikofaktoren',
+       'Adjuvante RCT bei positiven LK, positiven ResektionsrÃ¤ndern oder parametrialer Invasion (Sedlis/Peters-Kriterien)'],
+      [{name:'Cisplatin konkomitant',detail:'Cisplatin 40mg/mÂ² i.v. wÃ¶chentlich Ã— 5â€“6 Zyklen parallel zur EBRT. Hydratation: 1000ml Jonosteril vor + nach Infusion. Cave: Nierenfunktion (GFR â‰¥50) + HÃ¶rkontrolle.'}]);
   html+=learn('cx-ib','Hintergrund: Adjuvante Therapie-Indikationen',`
 <h4>Sedlis-Kriterien (adj. EBRT, kein Cisplatin)</h4>
-<p>GOG-92: ≥2 von drei Faktoren → adj. EBRT. <span class="hi">Drei Faktoren:</span> (1) Tumorgröße, (2) Invasionstiefe (tief/mittel), (3) LVSI-positiv. Relative Risikoreduktion für Lokalrezidiv ~46%.</p>
-<h4>Peters-Kriterien (adj. RCT – Cisplatin + RT)</h4>
-<p>GOG-109: LK-positiv, positive Resektionsränder oder Parametriumbeteiligung → konkomitante Cisplatin-RCT. <span class="hi">OS-Vorteil 13% absolut</span> gegenüber alleiniger RT.</p>
+<p>GOG-92: â‰¥2 von drei Faktoren â†’ adj. EBRT. <span class="hi">Drei Faktoren:</span> (1) TumorgrÃ¶ÃŸe, (2) Invasionstiefe (tief/mittel), (3) LVSI-positiv. Relative Risikoreduktion fÃ¼r Lokalrezidiv ~46%.</p>
+<h4>Peters-Kriterien (adj. RCT â€“ Cisplatin + RT)</h4>
+<p>GOG-109: LK-positiv, positive ResektionsrÃ¤nder oder Parametriumbeteiligung â†’ konkomitante Cisplatin-RCT. <span class="hi">OS-Vorteil 13% absolut</span> gegenÃ¼ber alleiniger RT.</p>
 <h4>Warum Cisplatin zur Strahlung?</h4>
-<p>Cisplatin sensibilisiert Tumorzellen durch Hemmung der DNA-Doppelstrangreparatur. Meta-Analyse: <span class="hi">6–8% absoluter OS-Vorteil</span> durch konkomitantes Cisplatin (Chemoradiotherapy for Cervical Cancer Meta-Analysis, Cochrane 2010).</p>`);
+<p>Cisplatin sensibilisiert Tumorzellen durch Hemmung der DNA-Doppelstrangreparatur. Meta-Analyse: <span class="hi">6â€“8% absoluter OS-Vorteil</span> durch konkomitantes Cisplatin (Chemoradiotherapy for Cervical Cancer Meta-Analysis, Cochrane 2010).</p>`);
   } else if(['IB3','IIA2','IIB','IIIA','IIIB','IIIC1','IIIC2'].includes(figo)){
-    html+=sec('radio','Lokal fortgeschritten – Primäre Radiochemotherapie','☢️',
-      [`Primäre konkomitante Radiochemotherapie Standard ${ago('++')}`,
-       `Pembrolizumab 200mg i.v. q3w + Cisplatin-RCT, dann Pembro Erhaltung × 15 Zyklen (KEYNOTE-A18) ${ago('++')}`,
-       'EBRT 45–50 Gy auf Becken ± paraaortale LK + konkomitant Cisplatin wöchentlich',
-       '**Brachytherapie obligat** – Gesamtdosis EQD2 ≥85 Gy auf HR-CTV'],
-      [{name:'Cisplatin wöchentlich',detail:'Cisplatin 40mg/m² i.v. wöchentlich × 5–6 Zyklen parallel zur EBRT. Hydratation: 1000ml Jonosteril vor + nach Infusion. GFR ≥50 Voraussetzung.'},
-       {name:'Pembrolizumab (KEYNOTE-A18)',detail:'Pembrolizumab 200mg i.v. q3w, Zyklus 1 an Tag 1 der 1. Cisplatin-Gabe. Nach RCT: Pembro Erhaltung 400mg i.v. q6w × 15 Zyklen. PD-L1-unabhängige Indikation.'}]);
-    html+=sec('radio','Brachytherapie-Details (HDR)','⚡',
-      ['Intrakavitäre Brachytherapie nach Abschluss EBRT oder simultan (letzte 2 Wochen EBRT)',
-       'HDR-Fraktionierung: 4–5 × 7 Gy wöchentlich intrakavitär (Vienna applicator / Ring+Tandem)',
-       'Alternativ: 5 × 5,5 Gy × 2/Woche oder 6 × 5 Gy',
-       'Zieldosis: HR-CTV ≥85 Gy EQD2 (α/β=10) – GYN-GEC-ESTRO Guideline',
-       'Bei großem Residualtumor (>5cm nach EBRT): IC/IS (intrakavitär/interstitiell), z.B. Vienna Ring+Nadeln',
+    html+=sec('radio','Lokal fortgeschritten â€“ PrimÃ¤re Radiochemotherapie','â˜¢ï¸',
+      [`PrimÃ¤re konkomitante Radiochemotherapie Standard ${ago('++')}`,
+       `Pembrolizumab 200mg i.v. q3w + Cisplatin-RCT, dann Pembro Erhaltung Ã— 15 Zyklen (KEYNOTE-A18) ${ago('++')}`,
+       'EBRT 45â€“50 Gy auf Becken Â± paraaortale LK + konkomitant Cisplatin wÃ¶chentlich',
+       '**Brachytherapie obligat** â€“ Gesamtdosis EQD2 â‰¥85 Gy auf HR-CTV'],
+      [{name:'Cisplatin wÃ¶chentlich',detail:'Cisplatin 40mg/mÂ² i.v. wÃ¶chentlich Ã— 5â€“6 Zyklen parallel zur EBRT. Hydratation: 1000ml Jonosteril vor + nach Infusion. GFR â‰¥50 Voraussetzung.'},
+       {name:'Pembrolizumab (KEYNOTE-A18)',detail:'Pembrolizumab 200mg i.v. q3w, Zyklus 1 an Tag 1 der 1. Cisplatin-Gabe. Nach RCT: Pembro Erhaltung 400mg i.v. q6w Ã— 15 Zyklen. PD-L1-unabhÃ¤ngige Indikation.'}]);
+    html+=sec('radio','Brachytherapie-Details (HDR)','âš¡',
+      ['IntrakavitÃ¤re Brachytherapie nach Abschluss EBRT oder simultan (letzte 2 Wochen EBRT)',
+       'HDR-Fraktionierung: 4â€“5 Ã— 7 Gy wÃ¶chentlich intrakavitÃ¤r (Vienna applicator / Ring+Tandem)',
+       'Alternativ: 5 Ã— 5,5 Gy Ã— 2/Woche oder 6 Ã— 5 Gy',
+       'Zieldosis: HR-CTV â‰¥85 Gy EQD2 (Î±/Î²=10) â€“ GYN-GEC-ESTRO Guideline',
+       'Bei groÃŸem Residualtumor (>5cm nach EBRT): IC/IS (intrakavitÃ¤r/interstitiell), z.B. Vienna Ring+Nadeln',
        'MRT-basierte Brachytherapieplanung empfohlen (Contouring nach EMBRACE-II)',
-       'OAR-Dosen: Blase D2cc ≤90 Gy EQD2, Rektum D2cc ≤75 Gy EQD2, Sigma D2cc ≤75 Gy EQD2']);
-    html+=study('INTERLACE','Wöchentliches Carboplatin-Taxol vor konkomitanter RCT (Induktionschemotherapie): Signifikante OS-Verbesserung (2024). Übernahme in 2. Linie von ESMO-Empfehlung. Überprüfen, ob bereits Standard.');
-  html+=learn('cx-adv','Hintergrund: Primäre Radiochemotherapie',`
+       'OAR-Dosen: Blase D2cc â‰¤90 Gy EQD2, Rektum D2cc â‰¤75 Gy EQD2, Sigma D2cc â‰¤75 Gy EQD2']);
+    html+=study('INTERLACE','WÃ¶chentliches Carboplatin-Taxol vor konkomitanter RCT (Induktionschemotherapie): Signifikante OS-Verbesserung (2024). Ãœbernahme in 2. Linie von ESMO-Empfehlung. ÃœberprÃ¼fen, ob bereits Standard.');
+  html+=learn('cx-adv','Hintergrund: PrimÃ¤re Radiochemotherapie',`
 <h4>KEYNOTE-A18 (N Engl J Med 2024)</h4>
-<p>1060 Patientinnen (FIGO IB2–IVA). Pembrolizumab + Cisplatin-RCT vs. Placebo, danach Pembrolizumab-Erhaltung × 15 Zyklen. <span class="hi">2-Jahres-PFS: 68% vs. 57% (HR 0.70, p&lt;0.001)</span>. Wichtig: Benefit ist <span class="hi">PD-L1-unabhängig</span> – anders als bei KEYNOTE-826 im metastasierten Setting.</p>
+<p>1060 Patientinnen (FIGO IB2â€“IVA). Pembrolizumab + Cisplatin-RCT vs. Placebo, danach Pembrolizumab-Erhaltung Ã— 15 Zyklen. <span class="hi">2-Jahres-PFS: 68% vs. 57% (HR 0.70, p&lt;0.001)</span>. Wichtig: Benefit ist <span class="hi">PD-L1-unabhÃ¤ngig</span> â€“ anders als bei KEYNOTE-826 im metastasierten Setting.</p>
 <h4>Warum Brachytherapie obligat?</h4>
-<p>EMBRACE-I: Gesamtdosis ≥85 Gy EQD2 am HR-CTV → <span class="hi">95% lokale Kontrolle</span> bei ≤4cm, 85% bei >4cm. EBRT allein: nur ~70%. Die Brachytherapie ist onkologisch unverzichtbar – fehlt sie, ist der kurative Anspruch gefährdet.</p>
+<p>EMBRACE-I: Gesamtdosis â‰¥85 Gy EQD2 am HR-CTV â†’ <span class="hi">95% lokale Kontrolle</span> bei â‰¤4cm, 85% bei >4cm. EBRT allein: nur ~70%. Die Brachytherapie ist onkologisch unverzichtbar â€“ fehlt sie, ist der kurative Anspruch gefÃ¤hrdet.</p>
 <h4>Was bedeutet EQD2?</h4>
-<p>Equivalent Dose in 2Gy fractions – ermöglicht biologischen Vergleich verschiedener Fraktionierungen. Formel: EQD2 = D × (d + α/β) / (2 + α/β). Für Tumor α/β=10; für Risikoorgane (Blase, Rektum) α/β=3.</p>
+<p>Equivalent Dose in 2Gy fractions â€“ ermÃ¶glicht biologischen Vergleich verschiedener Fraktionierungen. Formel: EQD2 = D Ã— (d + Î±/Î²) / (2 + Î±/Î²). FÃ¼r Tumor Î±/Î²=10; fÃ¼r Risikoorgane (Blase, Rektum) Î±/Î²=3.</p>
 <h4>INTERLACE (Lancet 2024)</h4>
-<p>Induktionschemotherapie (Carbo+Pac wöchentlich × 6 vor RCT) → <span class="hi">signifikante OS-Verbesserung</span>. Noch nicht Standardempfehlung in deutschen Leitlinien, aber ESMO 2024 empfiehlt Übernahme. Auf Tumorkonferenz diskutieren.</p>`);
+<p>Induktionschemotherapie (Carbo+Pac wÃ¶chentlich Ã— 6 vor RCT) â†’ <span class="hi">signifikante OS-Verbesserung</span>. Noch nicht Standardempfehlung in deutschen Leitlinien, aber ESMO 2024 empfiehlt Ãœbernahme. Auf Tumorkonferenz diskutieren.</p>`);
   } else if(['IVA'].includes(figo)){
-    html+=sec('radio','Stadium IVA – Palliative / Modifiziert kurativ','☢️',
-      ['Individueller Entscheid: Palliative RCT vs. primäre Systemtherapie',
+    html+=sec('radio','Stadium IVA â€“ Palliative / Modifiziert kurativ','â˜¢ï¸',
+      ['Individueller Entscheid: Palliative RCT vs. primÃ¤re Systemtherapie',
        'Exenteration im Einzelfall bei isoliertem Blasen-/Rektumbefall',
-       'Brachytherapie nach Möglichkeit ergänzen (Blutungskontrolle)']);
+       'Brachytherapie nach MÃ¶glichkeit ergÃ¤nzen (Blutungskontrolle)']);
   }
   if(['IVB','IIIC1','IIIC2'].includes(figo)||(figo&&figo.startsWith('IV'))){
-    html+=sec('immuno','Metastasiert / Rezidiv – Systemtherapie','💉',
-      [`1L PD-L1 CPS≥1: Pembrolizumab + Cisplatin/Carbo + Paclitaxel ± Bevacizumab (KEYNOTE-826) ${ago('++')}`,
-       `1L PD-L1 unabhängig: Bevacizumab + Carbo + Paclitaxel (GOG-240) ${ago('++')}`,
-       `2L Mono: Pembrolizumab (CPS≥1) ${ago('+')}; Cemiplimab ${ago('+')}`,
-       `Tisotumab vedotin (ADC) nach ≥2 Linien (innoviTV 204) ${ago('+')}`,
+    html+=sec('immuno','Metastasiert / Rezidiv â€“ Systemtherapie','ðŸ’‰',
+      [`1L PD-L1 CPSâ‰¥1: Pembrolizumab + Cisplatin/Carbo + Paclitaxel Â± Bevacizumab (KEYNOTE-826) ${ago('++')}`,
+       `1L PD-L1 unabhÃ¤ngig: Bevacizumab + Carbo + Paclitaxel (GOG-240) ${ago('++')}`,
+       `2L Mono: Pembrolizumab (CPSâ‰¥1) ${ago('+')}; Cemiplimab ${ago('+')}`,
+       `Tisotumab vedotin (ADC) nach â‰¥2 Linien (innoviTV 204) ${ago('+')}`,
        pdl1==='<1'?`PD-L1 CPS<1: Bevacizumab + Chemotherapie bevorzugen`:''
       ].filter(Boolean));
   }
   html+=learn('cx-sys','Hintergrund: Systemtherapie Zervix',`
 <h4>KEYNOTE-826 (N Engl J Med 2021)</h4>
-<p>617 Patientinnen (persistent/rezidivierend/metastasiert). Pembrolizumab + Carbo+Pac ± Bev vs. Placebo. <span class="hi">PD-L1 CPS≥1: OS HR 0.64 (signifikant)</span>. CPS&lt;1: kein Benefit → PD-L1-Testung obligat vor 1L-Systemtherapie.</p>
+<p>617 Patientinnen (persistent/rezidivierend/metastasiert). Pembrolizumab + Carbo+Pac Â± Bev vs. Placebo. <span class="hi">PD-L1 CPSâ‰¥1: OS HR 0.64 (signifikant)</span>. CPS&lt;1: kein Benefit â†’ PD-L1-Testung obligat vor 1L-Systemtherapie.</p>
 <h4>Was ist PD-L1 CPS?</h4>
-<p>Combined Positive Score = (PD-L1-positive Zellen / alle Tumorzellen) × 100. Unterschied zum TPS: CPS zählt auch Immunzellen + Stromazellen. <span class="hi">CPS ≥1 = Schwellenwert</span> beim Zervixkarzinom (bei KEYNOTE-826).</p>
+<p>Combined Positive Score = (PD-L1-positive Zellen / alle Tumorzellen) Ã— 100. Unterschied zum TPS: CPS zÃ¤hlt auch Immunzellen + Stromazellen. <span class="hi">CPS â‰¥1 = Schwellenwert</span> beim Zervixkarzinom (bei KEYNOTE-826).</p>
 <h4>Tisotumab Vedotin</h4>
-<p>Antikörper-Wirkstoff-Konjugat gegen Tissue Factor (TF). TF auf >80% der Zervixkarzinome überexprimiert. innoviTV 204: <span class="hi">ORR 24%</span> nach ≥2 Vortherapien. FDA-zugelassen; in Deutschland Einzelfallzulassung oder klinische Studie.</p>`);
-  html+=coll('supp-cervix','💊','Supportivmedizin',suppSection([
-    {label:'🤢 Antiemese Cisplatin (HEC)',text:'NK1-Antagonist (Netupitant/Palonosetron 300/0,5mg p.o.) + Dexamethason 12mg i.v. + Olanzapin 5mg p.o. Hydratation: 1000ml vor + nach Cisplatin. Ondansetron 8mg i.v. bei Bedarf.'},
-    {label:'🩺 Nierenfunktion',text:'GFR-Kontrolle vor jedem Cisplatin-Zyklus. Bei GFR 40–50: Cisplatin 25mg/m² + Hydratation intensivieren. Bei GFR <40: Cisplatin-Ersatz durch Carboplatin AUC4–5 erwägen.'},
-    {label:'🔎 Immuntherapie-Monitoring',text:'Pembrolizumab: TSH, LFT, Glukose, Kreatinin vor Therapie + q6–8W. irAE Grad 3–4: Sofortige Unterbrechung + Prednisolon 1–2mg/kg/d.'}
+<p>AntikÃ¶rper-Wirkstoff-Konjugat gegen Tissue Factor (TF). TF auf >80% der Zervixkarzinome Ã¼berexprimiert. innoviTV 204: <span class="hi">ORR 24%</span> nach â‰¥2 Vortherapien. FDA-zugelassen; in Deutschland Einzelfallzulassung oder klinische Studie.</p>`);
+  html+=coll('supp-cervix','ðŸ’Š','Supportivmedizin',suppSection([
+    {label:'ðŸ¤¢ Antiemese Cisplatin (HEC)',text:'NK1-Antagonist (Netupitant/Palonosetron 300/0,5mg p.o.) + Dexamethason 12mg i.v. + Olanzapin 5mg p.o. Hydratation: 1000ml vor + nach Cisplatin. Ondansetron 8mg i.v. bei Bedarf.'},
+    {label:'ðŸ©º Nierenfunktion',text:'GFR-Kontrolle vor jedem Cisplatin-Zyklus. Bei GFR 40â€“50: Cisplatin 25mg/mÂ² + Hydratation intensivieren. Bei GFR <40: Cisplatin-Ersatz durch Carboplatin AUC4â€“5 erwÃ¤gen.'},
+    {label:'ðŸ”Ž Immuntherapie-Monitoring',text:'Pembrolizumab: TSH, LFT, Glukose, Kreatinin vor Therapie + q6â€“8W. irAE Grad 3â€“4: Sofortige Unterbrechung + Prednisolon 1â€“2mg/kg/d.'}
   ]));
   return html;
 }
 
-// ── ENDOMETRIUM ───────────────────────────────────────────────────────────────
+// â”€â”€ ENDOMETRIUM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function recEndo(){
   const{figo,grade,lvsi}=S.staging;
   const{hist,pole,msi,p53,her2}=S.bio;
@@ -946,107 +945,107 @@ function recEndo(){
   let html='';
 
   // Pathologie-Checkliste
-  html+=coll('chk-endo',checklistEndo().some(i=>i.cls==='missing')?'⚠️':'✅','Pathologie-Checkliste',renderChecklist(checklistEndo()));
+  html+=coll('chk-endo',checklistEndo().some(i=>i.cls==='missing')?'âš ï¸':'âœ…','Pathologie-Checkliste',renderChecklist(checklistEndo()));
 
   if(figo==='IAmPOLEmut'||isPOLE){
-    html+=sec('surg','FIGO 2023 IAmPOLEmut – POLE-ultramutiert (günstig)','✅',
-      [`Exzellente Prognose – adjuvante Therapie kann ggf. deeskaliert werden ${ago('++')}`,
+    html+=sec('surg','FIGO 2023 IAmPOLEmut â€“ POLE-ultramutiert (gÃ¼nstig)','âœ…',
+      [`Exzellente Prognose â€“ adjuvante Therapie kann ggf. deeskaliert werden ${ago('++')}`,
        'Hysterektomie + bilaterale Adnexektomie Standard',
        'LVSI substanziell: Trotzdem keine Radiotherapie durch POLE-Protektion?',
        'Diskussion im Tumorboard: Ggf. Beobachtung ohne adj. RT auch bei G3/Nicht-endo',
        'Empfehlung: ESMO ECCO 2023 Konsensusdiskussion, individuelle Entscheidung']);
   html+=learn('en-pole','Hintergrund: POLE-Mutation beim Endometriumkarzinom',`
 <h4>Was ist POLE?</h4>
-<p>POLE kodiert die katalytische Untereinheit der DNA-Polymerase ε. Mutationen im exonuclease-Domain (hotspots: P286R, V411L, A456P, S459F) führen zu <span class="hi">fehlendem Proofreading</span> → hypermutierter Phänotyp (&gt;100 Mut/Mb, ultramutated).</p>
-<h4>Warum günstige Prognose trotz aggressiver Morphologie?</h4>
-<p>Hypermutation → viele Neoantigene → starke intrinsische Immunantwort. <span class="hi">5-JÜR nahezu 100%</span> bei frühem Stadium, selbst bei G3 endometrioid, serösem oder klarzelligem Muster. POLEmut überstimmt sogar die schlechte p53abn-Prognose.</p>
+<p>POLE kodiert die katalytische Untereinheit der DNA-Polymerase Îµ. Mutationen im exonuclease-Domain (hotspots: P286R, V411L, A456P, S459F) fÃ¼hren zu <span class="hi">fehlendem Proofreading</span> â†’ hypermutierter PhÃ¤notyp (&gt;100 Mut/Mb, ultramutated).</p>
+<h4>Warum gÃ¼nstige Prognose trotz aggressiver Morphologie?</h4>
+<p>Hypermutation â†’ viele Neoantigene â†’ starke intrinsische Immunantwort. <span class="hi">5-JÃœR nahezu 100%</span> bei frÃ¼hem Stadium, selbst bei G3 endometrioid, serÃ¶sem oder klarzelligem Muster. POLEmut Ã¼berstimmt sogar die schlechte p53abn-Prognose.</p>
 <h4>Adjuvante Therapie-Deeskalation bei POLEmut</h4>
-<p>ESMO 2023: Bei POLEmut → Reduktion/Wegfall adj. RT möglich, auch bei sonst hohem Risiko (G3, Myoinvasion ≥50%, LVSI). Prospektive Daten noch ausstehend – individuelle Entscheidung im Tumorboard.</p>`);
+<p>ESMO 2023: Bei POLEmut â†’ Reduktion/Wegfall adj. RT mÃ¶glich, auch bei sonst hohem Risiko (G3, Myoinvasion â‰¥50%, LVSI). Prospektive Daten noch ausstehend â€“ individuelle Entscheidung im Tumorboard.</p>`);
   } else if(isLow&&!isNonEndo&&!isP53){
     const needRT=grade==='G3'||lvsi==='substanziell'||figo==='IA3';
-    html+=sec('surg',`FIGO 2023 ${figo} – Niedrigrisiko/Intermediär`,'🔪',
+    html+=sec('surg',`FIGO 2023 ${figo} â€“ Niedrigrisiko/IntermediÃ¤r`,'ðŸ”ª',
       ['Hysterektomie + bilaterale Adnexektomie + Lymphknotenevaluation',
        'pelvine LND nur bei high-intermediate oder high-risk (ESMO 2023)',
        needRT?`Adjuvante vaginale Brachytherapie empfohlen ${ago('++')}`:
        isdMMR?`dMMR (Stadium IA3 wenn Ovar betroffen): Sentinel-LN obligat, adj. VBT diskutieren ${ago('+')}`:
-       `Adjuvante Therapie individuell – bei IA1/IA2/pMMR: Beobachtung möglich ${ago('++')}`,
-       isP53&&!isStageII?`p53-abnorm: IICmp53abn prüfen (Myoinvasion vorhanden?) – RT-Eskalation erwägen`:'',
-       'Vaginale Brachytherapie (VBT): 3 × 7 Gy HDR intrakavitär bei intermediärem Risiko'].filter(Boolean));
-  html+=learn('en-low','Hintergrund: Frühe Stadien & molekulare Klassifikation',`
-<h4>Warum Sentinel-LNB statt vollständige LND?</h4>
-<p>SentEC-Studie: Sentinel-LNB gleich sensitiv wie vollständige LND (99% negativer Prädiktivwert). <span class="hi">Bilaterale LND → Lymphödem in 15–30%</span> der Patientinnen. ESMO 2023 empfiehlt Sentinel-LNB als Standard bei frühem Stadium.</p>
+       `Adjuvante Therapie individuell â€“ bei IA1/IA2/pMMR: Beobachtung mÃ¶glich ${ago('++')}`,
+       isP53&&!isStageII?`p53-abnorm: IICmp53abn prÃ¼fen (Myoinvasion vorhanden?) â€“ RT-Eskalation erwÃ¤gen`:'',
+       'Vaginale Brachytherapie (VBT): 3 Ã— 7 Gy HDR intrakavitÃ¤r bei intermediÃ¤rem Risiko'].filter(Boolean));
+  html+=learn('en-low','Hintergrund: FrÃ¼he Stadien & molekulare Klassifikation',`
+<h4>Warum Sentinel-LNB statt vollstÃ¤ndige LND?</h4>
+<p>SentEC-Studie: Sentinel-LNB gleich sensitiv wie vollstÃ¤ndige LND (99% negativer PrÃ¤diktivwert). <span class="hi">Bilaterale LND â†’ LymphÃ¶dem in 15â€“30%</span> der Patientinnen. ESMO 2023 empfiehlt Sentinel-LNB als Standard bei frÃ¼hem Stadium.</p>
 <h4>PORTEC-1: Wann VBT?</h4>
-<p>PORTEC-1: VBT reduziert vaginale Rezidivrate von <span class="hi">14% → 3%</span>, aber kein OS-Vorteil. Bei IA1/IA2/G1-2/pMMR: Beobachtung möglich, da absolute Rezidivrate gering. Indikation bei G3 oder substanzieller LVSI.</p>
+<p>PORTEC-1: VBT reduziert vaginale Rezidivrate von <span class="hi">14% â†’ 3%</span>, aber kein OS-Vorteil. Bei IA1/IA2/G1-2/pMMR: Beobachtung mÃ¶glich, da absolute Rezidivrate gering. Indikation bei G3 oder substanzieller LVSI.</p>
 <h4>dMMR und Immuntherapie</h4>
-<p>dMMR (deficient MisMatch Repair): IHC-Verlust von MLH1, MSH2, MSH6 oder PMS2. Korreliert mit MSI-H. Konsequenz: Hohes Ansprechen auf Checkpoint-Inhibitoren (Pembrolizumab, Dostarlimab) – <span class="hi">PFS-Vorteil HR 0.28 bei RUBY</span>.</p>
+<p>dMMR (deficient MisMatch Repair): IHC-Verlust von MLH1, MSH2, MSH6 oder PMS2. Korreliert mit MSI-H. Konsequenz: Hohes Ansprechen auf Checkpoint-Inhibitoren (Pembrolizumab, Dostarlimab) â€“ <span class="hi">PFS-Vorteil HR 0.28 bei RUBY</span>.</p>
 <h4>Vier molekulare Subgruppen (ESMO 2023)</h4>
-<p>Hierarchie: <span class="hi">POLEmut</span> (günstig) > <span class="hi">dMMR</span> (intermediär-günstig, Immuntherapie-sensitiv) > <span class="hi">p53abn</span> (ungünstig) > <span class="hi">NSMP</span> (keine spez. Molekularpathologie).</p>`);
+<p>Hierarchie: <span class="hi">POLEmut</span> (gÃ¼nstig) > <span class="hi">dMMR</span> (intermediÃ¤r-gÃ¼nstig, Immuntherapie-sensitiv) > <span class="hi">p53abn</span> (ungÃ¼nstig) > <span class="hi">NSMP</span> (keine spez. Molekularpathologie).</p>`);
   } else if(figo==='IICmp53abn'||isP53){
-    html+=sec('radio','FIGO 2023 IICmp53abn – p53-abnorm (ungünstigster Subtyp)','⚠️',
-      [`p53-abnorm mit Myoinvasion = IICmp53abn – aggressive Biologie, Prognose wie nicht-endometrioid! ${ago('+/')}`,
+    html+=sec('radio','FIGO 2023 IICmp53abn â€“ p53-abnorm (ungÃ¼nstigster Subtyp)','âš ï¸',
+      [`p53-abnorm mit Myoinvasion = IICmp53abn â€“ aggressive Biologie, Prognose wie nicht-endometrioid! ${ago('+/')}`,
        'Hysterektomie + bilaterale Adnexektomie + pelvine LND',
        'Adjuvante Therapie analog nicht-endometrioid: RT + ggf. Chemotherapie diskutieren',
-       isAdv?`Stadium III–IV: Carboplatin + Paclitaxel + Dostarlimab (RUBY) erwägen ${ago('++')}`:
+       isAdv?`Stadium IIIâ€“IV: Carboplatin + Paclitaxel + Dostarlimab (RUBY) erwÃ¤gen ${ago('++')}`:
        'Adjuvante pelvine RT + VBT + ggf. Carbo+Pac (Kombination)'].filter(Boolean));
-    html+=study('DOMENICA / ENGOT-EN11','Nivolumab adjuvant bei dMMR/MSI-H EC Stadium III–IV (DOMENICA). POLE + p53-abnorm: Prospektive Studiendaten gesucht. Zentrumsaktivierung prüfen.');
+    html+=study('DOMENICA / ENGOT-EN11','Nivolumab adjuvant bei dMMR/MSI-H EC Stadium IIIâ€“IV (DOMENICA). POLE + p53-abnorm: Prospektive Studiendaten gesucht. Zentrumsaktivierung prÃ¼fen.');
   html+=learn('en-p53','Hintergrund: p53-abnorm (IICmp53abn)',`
 <h4>Was bedeutet p53-abnorm (IHC)?</h4>
-<p>IHC-Muster: (1) <span class="hi">Diffuse Überexpression</span> (&gt;80% der Zellen, starke Färbung) → gain-of-function-Mutation, oder (2) <span class="hi">Komplett-Verlust</span> (0% positiv) → loss-of-function. Normales Muster: heterogen 10–80%. p53abn ≠ sequenzierte TP53-Mutation.</p>
+<p>IHC-Muster: (1) <span class="hi">Diffuse Ãœberexpression</span> (&gt;80% der Zellen, starke FÃ¤rbung) â†’ gain-of-function-Mutation, oder (2) <span class="hi">Komplett-Verlust</span> (0% positiv) â†’ loss-of-function. Normales Muster: heterogen 10â€“80%. p53abn â‰  sequenzierte TP53-Mutation.</p>
 <h4>Warum schlechte Prognose?</h4>
-<p>TCGA-Klassifikation: p53abn-Tumoren verhalten sich biologisch wie seröse Karzinome, unabhängig von der Morphologie. <span class="hi">5-JÜR bei IICmp53abn: ~55–70%</span> (vs. >90% bei IA2/pMMR). Häufig genomische Instabilität (copy number alterations).</p>
+<p>TCGA-Klassifikation: p53abn-Tumoren verhalten sich biologisch wie serÃ¶se Karzinome, unabhÃ¤ngig von der Morphologie. <span class="hi">5-JÃœR bei IICmp53abn: ~55â€“70%</span> (vs. >90% bei IA2/pMMR). HÃ¤ufig genomische InstabilitÃ¤t (copy number alterations).</p>
 <h4>Hierarchieregel</h4>
-<p>ESMO 2023: Bei gleichzeitiger POLEmut + p53abn → günstige <span class="hi">POLEmut-Prognose gilt</span>. POLEmut overrides p53abn. Wichtig für Therapieentscheidung: Immer alle vier Marker erheben.</p>`);
+<p>ESMO 2023: Bei gleichzeitiger POLEmut + p53abn â†’ gÃ¼nstige <span class="hi">POLEmut-Prognose gilt</span>. POLEmut overrides p53abn. Wichtig fÃ¼r Therapieentscheidung: Immer alle vier Marker erheben.</p>`);
   } else if(isStageII||figo==='IB'){
-    html+=sec('surg',`Stadium ${figo} – Operativ + adjuvant`,'🔪',
+    html+=sec('surg',`Stadium ${figo} â€“ Operativ + adjuvant`,'ðŸ”ª',
       ['Hysterektomie + bilaterale Adnexektomie + pelvine LND + paraaortale LND (selektiv)',
        'Adjuvante Therapie nach Risikoprofil (PORTEC-3):',
-       `Nicht-endometrioid / G3 / LVSI substanziell: Carbo+Pac × 6 + pelvine RT ${ago('++')}`,
+       `Nicht-endometrioid / G3 / LVSI substanziell: Carbo+Pac Ã— 6 + pelvine RT ${ago('++')}`,
        `G1-2 endometrioid IB/II ohne Hochrisiko: VBT ausreichend ${ago('++')}`,
-       isdMMR?`dMMR: Dostarlimab (RUBY) oder Pembrolizumab adjuvant erwägen ${ago('++')}`:''
+       isdMMR?`dMMR: Dostarlimab (RUBY) oder Pembrolizumab adjuvant erwÃ¤gen ${ago('++')}`:''
       ].filter(Boolean));
-  html+=learn('en-ii','Hintergrund: Stadium IB/II – Adjuvante Therapie',`
+  html+=learn('en-ii','Hintergrund: Stadium IB/II â€“ Adjuvante Therapie',`
 <h4>PORTEC-3: Wann Chemo + RT?</h4>
-<p>Carbo+Pac × 3 → pelvine EBRT (48.6 Gy) → Carbo+Pac × 3. Vorteil bei <span class="hi">G3 endometrioid, serös, klarzellig oder Stadium III</span>. 5-JÜR 68% vs. 58% (RT allein) bei Hochrisiko-Gruppe.</p>
+<p>Carbo+Pac Ã— 3 â†’ pelvine EBRT (48.6 Gy) â†’ Carbo+Pac Ã— 3. Vorteil bei <span class="hi">G3 endometrioid, serÃ¶s, klarzellig oder Stadium III</span>. 5-JÃœR 68% vs. 58% (RT allein) bei Hochrisiko-Gruppe.</p>
 <h4>VBT vs. pelvine EBRT bei G1-2 endometrioid</h4>
-<p>PORTEC-2: VBT gleich effektiv wie pelvine EBRT für vaginale Kontrolle bei intermediärem Risiko, aber <span class="hi">deutlich weniger Darm-Nebenwirkungen</span>. VBT bevorzugt bei G1-2 endometrioid ohne Risikofaktoren.</p>
-<h4>dMMR Stadium II – Immuntherapie</h4>
-<p>RUBY-Studie zeigt auch Benefit bei frühem Stadium III (nicht publiziert für Stadium II isoliert). Dostarlimab/Pembrolizumab adjuvant bei dMMR EC zeigt <span class="hi">deutliche EFS-Verbesserung</span>. Zulassung bisher für Stadium III/IV.</p>`);
+<p>PORTEC-2: VBT gleich effektiv wie pelvine EBRT fÃ¼r vaginale Kontrolle bei intermediÃ¤rem Risiko, aber <span class="hi">deutlich weniger Darm-Nebenwirkungen</span>. VBT bevorzugt bei G1-2 endometrioid ohne Risikofaktoren.</p>
+<h4>dMMR Stadium II â€“ Immuntherapie</h4>
+<p>RUBY-Studie zeigt auch Benefit bei frÃ¼hem Stadium III (nicht publiziert fÃ¼r Stadium II isoliert). Dostarlimab/Pembrolizumab adjuvant bei dMMR EC zeigt <span class="hi">deutliche EFS-Verbesserung</span>. Zulassung bisher fÃ¼r Stadium III/IV.</p>`);
   } else if(isAdv){
     const withDostarlimab=isdMMR;
-    html+=sec('chemo','Stadium III–IVA – Systemtherapie + RT','💊',
-      [`Carboplatin AUC5 + Paclitaxel 175mg/m² q21 × 6 Zyklen ${ago('++')}`,
-       withDostarlimab?`+ Dostarlimab 500mg q3w × 4–6 Zyklen, dann 1000mg q6w Erhaltung (RUBY/ENGOT-EN6) ${ago('++')}`:
-       `dMMR/MSI-H: Dostarlimab oder Pembrolizumab + Carbo/Pac obligat prüfen! ${ago('++')}`,
-       `pMMR Hochrisiko (p53abn, serös, G3): Lenvatinib + Pembrolizumab erwägen ${ago('+')}`,
-       her2==='positiv'?`HER2+ serös: Trastuzumab + Carbo/Pac (DESTINY-Endo Studie prüfen!)`:
+    html+=sec('chemo','Stadium IIIâ€“IVA â€“ Systemtherapie + RT','ðŸ’Š',
+      [`Carboplatin AUC5 + Paclitaxel 175mg/mÂ² q21 Ã— 6 Zyklen ${ago('++')}`,
+       withDostarlimab?`+ Dostarlimab 500mg q3w Ã— 4â€“6 Zyklen, dann 1000mg q6w Erhaltung (RUBY/ENGOT-EN6) ${ago('++')}`:
+       `dMMR/MSI-H: Dostarlimab oder Pembrolizumab + Carbo/Pac obligat prÃ¼fen! ${ago('++')}`,
+       `pMMR Hochrisiko (p53abn, serÃ¶s, G3): Lenvatinib + Pembrolizumab erwÃ¤gen ${ago('+')}`,
+       her2==='positiv'?`HER2+ serÃ¶s: Trastuzumab + Carbo/Pac (DESTINY-Endo Studie prÃ¼fen!)`:
        `Adjuvante pelvine RT + VBT nach Chemotherapie (PORTEC-3) ${ago('++')}`,
        'Tumordebulking komplett (R0) anstreben vor Systemtherapie!'
       ].filter(Boolean),
-      [{name:'Carbo/Pac (KEM)',detail:'Carboplatin AUC5 i.v. + Paclitaxel 175mg/m² 3h i.v. d1 q21 × 6 Zyklen. Premedikation: Netupitant/Palonosetron + Dexamethason 12mg i.v. + Clemastin 2mg + Cimetidin 300mg i.v.'},
-       {name:'Dostarlimab (RUBY)',detail:'Dostarlimab 500mg i.v. q21 × 4–6 Zyklen (mit Carbo/Pac), dann 1000mg i.v. q6w Erhaltung. Starke EFS-Verbesserung bei dMMR/MSI-H (RUBY-Studie). Zulassung dMMR/MSI-H.'}]);
-    if(isdMMR) html+=study('DOMENICA / KEYNOTE-C25','dMMR EC Stadium III–IV: Nivolumab-Studien aktiv. KEYNOTE-C25: Pembrolizumab adjuvant. Studienzugang prüfen (Univ. Essen aktiv).');
-    if(her2==='positiv') html+=study('DESTINY-Endo (HER2+ serös)','Trastuzumab-Deruxtecan bei HER2-überexprimierendem EC. Phase-II aktiv. Trastuzumab + Carbo/Pac derzeit off-label, aber klinisch plausibel.');
+      [{name:'Carbo/Pac (KEM)',detail:'Carboplatin AUC5 i.v. + Paclitaxel 175mg/mÂ² 3h i.v. d1 q21 Ã— 6 Zyklen. Premedikation: Netupitant/Palonosetron + Dexamethason 12mg i.v. + Clemastin 2mg + Cimetidin 300mg i.v.'},
+       {name:'Dostarlimab (RUBY)',detail:'Dostarlimab 500mg i.v. q21 Ã— 4â€“6 Zyklen (mit Carbo/Pac), dann 1000mg i.v. q6w Erhaltung. Starke EFS-Verbesserung bei dMMR/MSI-H (RUBY-Studie). Zulassung dMMR/MSI-H.'}]);
+    if(isdMMR) html+=study('DOMENICA / KEYNOTE-C25','dMMR EC Stadium IIIâ€“IV: Nivolumab-Studien aktiv. KEYNOTE-C25: Pembrolizumab adjuvant. Studienzugang prÃ¼fen (Univ. Essen aktiv).');
+    if(her2==='positiv') html+=study('DESTINY-Endo (HER2+ serÃ¶s)','Trastuzumab-Deruxtecan bei HER2-Ã¼berexprimierendem EC. Phase-II aktiv. Trastuzumab + Carbo/Pac derzeit off-label, aber klinisch plausibel.');
   }
   html+=learn('en-adv','Hintergrund: Fortgeschrittenes Endometriumkarzinom',`
 <h4>RUBY / ENGOT-EN6 (N Engl J Med 2023)</h4>
 <p>494 Patientinnen EC Stadium III/IV oder Rezidiv. Dostarlimab + Carbo/Pac. <span class="hi">dMMR: PFS HR 0.28!</span> (signifikant). pMMR: kein signifikanter PFS-Vorteil. Dostarlimab-Zulassung daher nur bei dMMR/MSI-H EC.</p>
 <h4>Lenvatinib + Pembrolizumab (KEYNOTE-775)</h4>
-<p>827 Patientinnen, 2L nach Platin. <span class="hi">PFS HR 0.60</span> (gesamt), auch bei pMMR (HR 0.60). Lenvatinib (Multikinase-Inhibitor, antiangiogen + immunmodulatorisch) + Pembrolizumab zeigt synergistischen Effekt unabhängig von PD-L1-/MMR-Status.</p>
-<h4>HER2 beim serösen EC</h4>
-<p>HER2-Überexpression bei ~30% seröser EC (vs. ~5% endometrioid). Trastuzumab + Carbo/Pac zeigt klinischen Benefit (Phase-II-Daten). <span class="hi">DESTINY-Endo:</span> T-DXd beim HER2+ EC in Prüfung – Studienzugang prüfen!</p>`);
+<p>827 Patientinnen, 2L nach Platin. <span class="hi">PFS HR 0.60</span> (gesamt), auch bei pMMR (HR 0.60). Lenvatinib (Multikinase-Inhibitor, antiangiogen + immunmodulatorisch) + Pembrolizumab zeigt synergistischen Effekt unabhÃ¤ngig von PD-L1-/MMR-Status.</p>
+<h4>HER2 beim serÃ¶sen EC</h4>
+<p>HER2-Ãœberexpression bei ~30% serÃ¶ser EC (vs. ~5% endometrioid). Trastuzumab + Carbo/Pac zeigt klinischen Benefit (Phase-II-Daten). <span class="hi">DESTINY-Endo:</span> T-DXd beim HER2+ EC in PrÃ¼fung â€“ Studienzugang prÃ¼fen!</p>`);
   if(['IVB','IVC'].includes(figo)){
-    html+=sec('chemo',`Stadium ${figo} / Rezidiv – Palliative Systemtherapie`,'💊',
+    html+=sec('chemo',`Stadium ${figo} / Rezidiv â€“ Palliative Systemtherapie`,'ðŸ’Š',
       [`Carboplatin + Paclitaxel + Pembrolizumab/Dostarlimab (dMMR) ${ago('++')}`,
        `Lenvatinib 20mg/d p.o. + Pembrolizumab 200mg i.v. q21 (pMMR, 2L) (KEYNOTE-775) ${ago('++')}`,
        'Hormontherapie (ER+ G1-G2): Megestrol 160mg/d oder AI + CDK4/6i',
        'Medroxyprogesteronacetat 200mg/d bei Low-grade endometrioid',
        'Bevacizumab + Chemotherapie als Option bei Progress']);
   }
-  html+=coll('supp-endo','💊','Supportivmedizin',suppEndo());
+  html+=coll('supp-endo','ðŸ’Š','Supportivmedizin',suppEndo());
   return html;
 }
 
-// ── OVAR ──────────────────────────────────────────────────────────────────────
+// â”€â”€ OVAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function recOvar(){
   const{figo,stroma}=S.staging;
   const{hist,hrd,pdl1,nac,pfi}=S.bio;
@@ -1060,48 +1059,48 @@ function recOvar(){
   const isFRpos=pdl1==='positiv';
   let html='';
 
-  html+=coll('chk-ovar',checklistOvar().some(i=>i.cls==='missing')?'⚠️':'✅','Pathologie-Checkliste',renderChecklist(checklistOvar()));
+  html+=coll('chk-ovar',checklistOvar().some(i=>i.cls==='missing')?'âš ï¸':'âœ…','Pathologie-Checkliste',renderChecklist(checklistOvar()));
 
   if(!isRez){
-    // Primärtherapie
+    // PrimÃ¤rtherapie
     if(isEarly){
-      html+=sec('surg','Früh-Stadium (FIGO I) – Staging-Operation','🔪',
+      html+=sec('surg','FrÃ¼h-Stadium (FIGO I) â€“ Staging-Operation','ðŸ”ª',
         ['Komplettes chirurgisches Staging obligat: HE + BA + Omentektomie + pelvine+paraaortale LND + Peritonealbiopsien',
-         'FIGO IA G1: Beobachtung möglich nach komplettem Staging (keine adj. Chemo)',
-         `FIGO IA G2 / IB: Carbo+Pac × 3–6 Zyklen adjuvant ${ago('+')}`,
-         `FIGO IC / G3 / Klarzellig: Carbo+Pac × 6 Zyklen obligat ${ago('++')}`,
-         'Fertilitätserhalt: Nur FIGO IA G1 nach vollständigem Staging möglich']);
+         'FIGO IA G1: Beobachtung mÃ¶glich nach komplettem Staging (keine adj. Chemo)',
+         `FIGO IA G2 / IB: Carbo+Pac Ã— 3â€“6 Zyklen adjuvant ${ago('+')}`,
+         `FIGO IC / G3 / Klarzellig: Carbo+Pac Ã— 6 Zyklen obligat ${ago('++')}`,
+         'FertilitÃ¤tserhalt: Nur FIGO IA G1 nach vollstÃ¤ndigem Staging mÃ¶glich']);
     } else {
-      html+=sec('surg','Fortgeschrittenes Ovarialkarzinom – Primärtherapie','🔪',
-        [`Primäres Ziel: Komplette Zytoreduktion (R0) anstreben ${ago('++')}`,
-         stroma==='R0'?`R0-Resektion erreicht – Prognose optimal`:
-         stroma==='R2'?`R2: Intervalldebulking nach 3 Zyklen NAC erwägen (CHORUS/EORTC)`:
+      html+=sec('surg','Fortgeschrittenes Ovarialkarzinom â€“ PrimÃ¤rtherapie','ðŸ”ª',
+        [`PrimÃ¤res Ziel: Komplette Zytoreduktion (R0) anstreben ${ago('++')}`,
+         stroma==='R0'?`R0-Resektion erreicht â€“ Prognose optimal`:
+         stroma==='R2'?`R2: Intervalldebulking nach 3 Zyklen NAC erwÃ¤gen (CHORUS/EORTC)`:
          `Staging/Debulking komplett, dann adjuvante Chemotherapie`,
-         'Neoadjuvante Chemotherapie (NACT) + Intervalldebulking bei primär irresektablen Tumoren']);
-      html+=sec('chemo','Primärchemotherapie HGSC','💊',
-        [`Carboplatin AUC5 + Paclitaxel 175mg/m² q21 × 6 Zyklen ${ago('++')}`,
-         `+ Bevacizumab 15mg/kg q21 bei FIGO IIIB–IV oder R>0 (ICON7/GOG-218) ${ago('++')}`,
+         'Neoadjuvante Chemotherapie (NACT) + Intervalldebulking bei primÃ¤r irresektablen Tumoren']);
+      html+=sec('chemo','PrimÃ¤rchemotherapie HGSC','ðŸ’Š',
+        [`Carboplatin AUC5 + Paclitaxel 175mg/mÂ² q21 Ã— 6 Zyklen ${ago('++')}`,
+         `+ Bevacizumab 15mg/kg q21 bei FIGO IIIBâ€“IV oder R>0 (ICON7/GOG-218) ${ago('++')}`,
          `Bevacizumab Erhaltung bis 15 Monate (22 Zyklen gesamt) ${ago('++')}`,
          `Erhaltungstherapie PARP-Inhibitor nach CR/PR (s.u.) ${ago('++')}`],
-        [{name:'Carbo+Pac (KEM)',detail:'Paclitaxel 175mg/m² 3h i.v. Tag 1 + Carboplatin AUC5 (max. 800mg) i.v. Tag 1, q21. Premedikation: Netupitant/Palonosetron 300/0,5mg p.o. + Dexamethason 12mg i.v. + Clemastin 2mg + Cimetidin 300mg i.v.'},
-         {name:'Bevacizumab (ICON7)',detail:'Bevacizumab 15mg/kg i.v. Tag 1, q21 für 15 Monate (22 Zyklen, inkl. 6 Monate mit Chemo + 16 Monate Erhaltung). Indikation: FIGO IIIB–IV oder R>0. Cave: keine Wundheilungsstörung, Hypertonie kontrollieren.'}]);
-      html+=sec('target','PARP-Inhibitor Erhaltungstherapie','🧬',
-        [isBRCA?`BRCA1/2-Mutation: Olaparib 300mg 2×/d × 2 Jahre (SOLO-1) ${ago('++')}`:
+        [{name:'Carbo+Pac (KEM)',detail:'Paclitaxel 175mg/mÂ² 3h i.v. Tag 1 + Carboplatin AUC5 (max. 800mg) i.v. Tag 1, q21. Premedikation: Netupitant/Palonosetron 300/0,5mg p.o. + Dexamethason 12mg i.v. + Clemastin 2mg + Cimetidin 300mg i.v.'},
+         {name:'Bevacizumab (ICON7)',detail:'Bevacizumab 15mg/kg i.v. Tag 1, q21 fÃ¼r 15 Monate (22 Zyklen, inkl. 6 Monate mit Chemo + 16 Monate Erhaltung). Indikation: FIGO IIIBâ€“IV oder R>0. Cave: keine WundheilungsstÃ¶rung, Hypertonie kontrollieren.'}]);
+      html+=sec('target','PARP-Inhibitor Erhaltungstherapie','ðŸ§¬',
+        [isBRCA?`BRCA1/2-Mutation: Olaparib 300mg 2Ã—/d Ã— 2 Jahre (SOLO-1) ${ago('++')}`:
          isHRDpos?`HRD-positiv: Niraparib 200mg/d oder Olaparib+Bevacizumab (PAOLA-1) ${ago('++')}`:
-         `HRD-negativ: Niraparib 200mg/d × 3 Jahre (PRIMA) – moderater Benefit ${ago('+')}`,
-         `Bei Bevacizumab in Primärtherapie: Olaparib+Bevacizumab Erhaltung (PAOLA-1) ${ago('++')}`,
+         `HRD-negativ: Niraparib 200mg/d Ã— 3 Jahre (PRIMA) â€“ moderater Benefit ${ago('+')}`,
+         `Bei Bevacizumab in PrimÃ¤rtherapie: Olaparib+Bevacizumab Erhaltung (PAOLA-1) ${ago('++')}`,
          'BRCA1/2-somatisch testen wenn Keimbahn negativ (vor Olaparib-Entscheidung)!'],
-        [{name:'Olaparib (SOLO-1)',detail:'300mg (2×150mg Tbl.) p.o. morgens + abends × 2 Jahre. Beginn ≥4 Wo. nach letzter Chemo. Reduktion: 250→200mg 2×/d bei Toxizität. Hämatotoxizität: CBC q4W Monat 1–3.'},
-         {name:'Niraparib (PRIMA)',detail:'200mg/d p.o. (Startdosis bei <77kg oder Thrombo ≤150.000/µl). Bei ≥77kg + Thrombo >150.000/µl: 300mg/d. Reduktion: 200→100mg/d. Cave: RR-Kontrolle wöchentlich Monat 1–2 (Hypertension-Risiko)!'}]);
+        [{name:'Olaparib (SOLO-1)',detail:'300mg (2Ã—150mg Tbl.) p.o. morgens + abends Ã— 2 Jahre. Beginn â‰¥4 Wo. nach letzter Chemo. Reduktion: 250â†’200mg 2Ã—/d bei ToxizitÃ¤t. HÃ¤matotoxizitÃ¤t: CBC q4W Monat 1â€“3.'},
+         {name:'Niraparib (PRIMA)',detail:'200mg/d p.o. (Startdosis bei <77kg oder Thrombo â‰¤150.000/Âµl). Bei â‰¥77kg + Thrombo >150.000/Âµl: 300mg/d. Reduktion: 200â†’100mg/d. Cave: RR-Kontrolle wÃ¶chentlich Monat 1â€“2 (Hypertension-Risiko)!'}]);
     }
     if(isLGSC){
-      html+=sec('target','Low-grade seröses Karzinom (LGSC)','🎯',
+      html+=sec('target','Low-grade serÃ¶ses Karzinom (LGSC)','ðŸŽ¯',
         [`LGSC: Zytoreduktion operativ ${ago('++')}`,
          `Hormontherapie nach kompletter OP: Letrozol 2,5mg/d oder Tamoxifen ${ago('+')}`,
          `MEK-Inhibitor Trametinib nach Progress (MEK162-Daten) ${ago('+')}`,
          `KRAS/BRAF-Testung zur MEK-Inhibitor-Planung empfohlen`],
-        [{name:'Trametinib (MEK)',detail:'Trametinib 2mg p.o. 1×/d (MEK-Inhibitor). Cave: Augenarzt + Echo vor Therapie! Monatliche Echo-Kontrolle. Cave: Kostenübernahmeantrag erforderlich.'}]);
-      html+=study('GOG-0281 / MILO','Trametinib vs. Standard-Chemotherapie bei LGSC Rezidiv (GOG-0281 abgeschlossen 2024). NRG-GY019: MEK + Debulking. Zentrumsbasierte Studie prüfen.');
+        [{name:'Trametinib (MEK)',detail:'Trametinib 2mg p.o. 1Ã—/d (MEK-Inhibitor). Cave: Augenarzt + Echo vor Therapie! Monatliche Echo-Kontrolle. Cave: KostenÃ¼bernahmeantrag erforderlich.'}]);
+      html+=study('GOG-0281 / MILO','Trametinib vs. Standard-Chemotherapie bei LGSC Rezidiv (GOG-0281 abgeschlossen 2024). NRG-GY019: MEK + Debulking. Zentrumsbasierte Studie prÃ¼fen.');
     }
   } else {
     // Rezidivtherapie
@@ -1109,136 +1108,136 @@ function recOvar(){
     const resistant=pfi==='<6';
     const refractory=pfi==='<1';
     if(sensitive){
-      html+=sec('chemo','Platinsensibles Rezidiv (PFI >6 Mo)','💊',
+      html+=sec('chemo','Platinsensibles Rezidiv (PFI >6 Mo)','ðŸ’Š',
         [`Re-Platinierung: Carboplatin + Gemcitabin oder Carbo + PLD oder Carbo + Pac ${ago('++')}`,
          `+ Bevacizumab (OCEANS/AGO-OVAR 2.21) ${ago('++')}`,
-         isBRCA?`BRCA-positiv Rezidiv: Olaparib 300mg 2×/d Erhaltung nach CR/PR (SOLO-2) ${ago('++')}`:
-         isHRDpos?`HRD-positiv: Niraparib oder Rucaparib Erhaltung erwägen ${ago('+')}`:
-         `Niraparib Erhaltung auch bei HRD-negativ erwägen (NOVA) ${ago('+')}`,
+         isBRCA?`BRCA-positiv Rezidiv: Olaparib 300mg 2Ã—/d Erhaltung nach CR/PR (SOLO-2) ${ago('++')}`:
+         isHRDpos?`HRD-positiv: Niraparib oder Rucaparib Erhaltung erwÃ¤gen ${ago('+')}`:
+         `Niraparib Erhaltung auch bei HRD-negativ erwÃ¤gen (NOVA) ${ago('+')}`,
          `BRCA-somatisch testen wenn Keimbahn negativ und noch keine PARP-Exposition!`],
-        [{name:'Carbo+Gem',detail:'Carboplatin AUC4 (max. 600mg) i.v. d1 + Gemcitabin 1000mg/m² i.v. d1,8 q21. Premedikation: Netupitant/Palonosetron + Dexamethason 8mg i.v.'},
-         {name:'Carbo+PLD',detail:'PLD 30mg/m² i.v. d1 + Carboplatin AUC5 (max. 800mg) i.v. d1, q28. Cave: PLD-Infusionsrate beim 1. Zyklus ≤1mg/min!'}]);
-      html+=study('MIRASOL-Extension / CLIO','FRα+ platinsensibel: Mirvetuximab-Studien. Aktuelle Bewerbungen für Mirvetuximab soravtansine im Refraktärsetting (EU-Zulassung ausstehend).');
+        [{name:'Carbo+Gem',detail:'Carboplatin AUC4 (max. 600mg) i.v. d1 + Gemcitabin 1000mg/mÂ² i.v. d1,8 q21. Premedikation: Netupitant/Palonosetron + Dexamethason 8mg i.v.'},
+         {name:'Carbo+PLD',detail:'PLD 30mg/mÂ² i.v. d1 + Carboplatin AUC5 (max. 800mg) i.v. d1, q28. Cave: PLD-Infusionsrate beim 1. Zyklus â‰¤1mg/min!'}]);
+      html+=study('MIRASOL-Extension / CLIO','FRÎ±+ platinsensibel: Mirvetuximab-Studien. Aktuelle Bewerbungen fÃ¼r Mirvetuximab soravtansine im RefraktÃ¤rsetting (EU-Zulassung ausstehend).');
     }
     if(resistant||refractory){
-      html+=sec('chemo','Platinresistentes/-refraktäres Rezidiv','💊',
-        [`Wöchentliches Paclitaxel 80mg/m² (d1,8,15 q28) oder PLD 40–50mg/m² q28 ${ago('++')}`,
-         `+ Bevacizumab 10–15mg/kg q2–3w (AURELIA) ${ago('++')}`,
-         isFRpos?`FRα-positiv (PS ≥75%): Mirvetuximab Soravtansine (MIRASOL) ${ago('++')}`:
-         `FRα-Status testen → Mirvetuximab bei FRα+ platinresistent ${ago('++')}`,
+      html+=sec('chemo','Platinresistentes/-refraktÃ¤res Rezidiv','ðŸ’Š',
+        [`WÃ¶chentliches Paclitaxel 80mg/mÂ² (d1,8,15 q28) oder PLD 40â€“50mg/mÂ² q28 ${ago('++')}`,
+         `+ Bevacizumab 10â€“15mg/kg q2â€“3w (AURELIA) ${ago('++')}`,
+         isFRpos?`FRÎ±-positiv (PS â‰¥75%): Mirvetuximab Soravtansine (MIRASOL) ${ago('++')}`:
+         `FRÎ±-Status testen â†’ Mirvetuximab bei FRÎ±+ platinresistent ${ago('++')}`,
          isLGSC?`LGSC: Trametinib 2mg/d (MEK-Inhibitor) ${ago('+')}`:
-         `Topotecan 1,25mg/m² d1–5 q21 oder Gemcitabin mono als Option`],
-        [{name:'Mirvetuximab Soravtansine (MIRASOL)',detail:'6mg/kg IBW i.v. q21. Indikation: FRα-positiv, platinresistent nach 1–3 Vorlinien. Cave: Augenarzt-Voruntersuchung obligat + Kortison-Augentropfen 6×/d d-1 bis d8. Kühlpack auf Augen während Infusion. EU-Zulassung Stand 2024 beachten.'}]);
+         `Topotecan 1,25mg/mÂ² d1â€“5 q21 oder Gemcitabin mono als Option`],
+        [{name:'Mirvetuximab Soravtansine (MIRASOL)',detail:'6mg/kg IBW i.v. q21. Indikation: FRÎ±-positiv, platinresistent nach 1â€“3 Vorlinien. Cave: Augenarzt-Voruntersuchung obligat + Kortison-Augentropfen 6Ã—/d d-1 bis d8. KÃ¼hlpack auf Augen wÃ¤hrend Infusion. EU-Zulassung Stand 2024 beachten.'}]);
     }
   }
-  html+=coll('supp-ovar','💊','Supportivmedizin',suppOvar());
+  html+=coll('supp-ovar','ðŸ’Š','Supportivmedizin',suppOvar());
   return html;
 }
 
-// ── VULVA ─────────────────────────────────────────────────────────────────────
+// â”€â”€ VULVA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function recVulva(){
   const{figo,stroma}=S.staging;
   let html='';
   if(['IA'].includes(figo)){
-    html+=sec('surg','Vulvakarzinom FIGO IA – Weite lokale Exzision','🔪',
-      ['Weite lokale Exzision (Sicherheitsabstand ≥8mm histologisch)',
-       'Keine Sentinel-LNB erforderlich (Stromainvasion ≤1mm)',
-       'Nachsorge alle 3 Monate × 2 Jahre, dann halbjährlich']);
-  html+=learn('vl-ia','Hintergrund: FIGO IA – Warum kein Sentinel?',`
+    html+=sec('surg','Vulvakarzinom FIGO IA â€“ Weite lokale Exzision','ðŸ”ª',
+      ['Weite lokale Exzision (Sicherheitsabstand â‰¥8mm histologisch)',
+       'Keine Sentinel-LNB erforderlich (Stromainvasion â‰¤1mm)',
+       'Nachsorge alle 3 Monate Ã— 2 Jahre, dann halbjÃ¤hrlich']);
+  html+=learn('vl-ia','Hintergrund: FIGO IA â€“ Warum kein Sentinel?',`
 <h4>LK-Metastasenrisiko bei IA</h4>
-<p>Stromainvasion ≤1mm: Risiko inguinaler LK-Metastasen <span class="hi">&lt;1%</span> (Homesley, GOG-74). Sentinel-LNB wäre Overtreatment mit Morbiditätsrisiko (Lymphödem, Wundinfektion) ohne onkologischen Nutzen.</p>
-<h4>Warum ≥8mm Sicherheitsabstand?</h4>
-<p>≥8mm histologisch entspricht ~10mm klinisch (Formalin bewirkt ~20% Gewebeschrumpfung). R1 beim Vulvakarzinom → Lokalrezidivrisiko <span class="hi">~50% vs. ~10%</span> bei R0 (Heaps 1990). Re-Exzision bei R1 obligat, wenn anatomisch möglich.</p>`);
+<p>Stromainvasion â‰¤1mm: Risiko inguinaler LK-Metastasen <span class="hi">&lt;1%</span> (Homesley, GOG-74). Sentinel-LNB wÃ¤re Overtreatment mit MorbiditÃ¤tsrisiko (LymphÃ¶dem, Wundinfektion) ohne onkologischen Nutzen.</p>
+<h4>Warum â‰¥8mm Sicherheitsabstand?</h4>
+<p>â‰¥8mm histologisch entspricht ~10mm klinisch (Formalin bewirkt ~20% Gewebeschrumpfung). R1 beim Vulvakarzinom â†’ Lokalrezidivrisiko <span class="hi">~50% vs. ~10%</span> bei R0 (Heaps 1990). Re-Exzision bei R1 obligat, wenn anatomisch mÃ¶glich.</p>`);
   } else if(['IB','II'].includes(figo)){
-    html+=sec('surg',`Vulvakarzinom FIGO ${figo} – Radikale Exzision + SLNB`,'🔪',
-      ['Radikale lokale Exzision mit ≥8mm Sicherheitsabstand + bilaterale Sentinel-LNB (GROINSS-V)',
+    html+=sec('surg',`Vulvakarzinom FIGO ${figo} â€“ Radikale Exzision + SLNB`,'ðŸ”ª',
+      ['Radikale lokale Exzision mit â‰¥8mm Sicherheitsabstand + bilaterale Sentinel-LNB (GROINSS-V)',
        'Midline-Tumor: Bilaterale Sentinel obligat',
-       'Sentinel positiv → inguinofemorale LND oder adjuvante RT inguinal (GROINSS-V-II)',
+       'Sentinel positiv â†’ inguinofemorale LND oder adjuvante RT inguinal (GROINSS-V-II)',
        stroma==='R1'?`R1: Adjuvante RT (50 Gy) oder Re-Exzision ${ago('++')}`:
        stroma==='close'?`Knapper Rand: Re-Exzision oder adjuvante VBT diskutieren`:'']);
   html+=learn('vl-ib','Hintergrund: Sentinel-LNB beim Vulvakarzinom',`
 <h4>GROINSS-V-I (Lancet Oncol 2008)</h4>
-<p>403 Patientinnen, Sentinel-LNB bei T1–T2 ≤4cm. Sentinel-negativ → kein weiteres LK-Staging. <span class="hi">Falsch-negativ-Rate: 3%</span>. Groin-Rezidivrate: 2.3% (vergleichbar mit vollständiger LND). Bewies die Sicherheit der Sentinel-Strategie.</p>
+<p>403 Patientinnen, Sentinel-LNB bei T1â€“T2 â‰¤4cm. Sentinel-negativ â†’ kein weiteres LK-Staging. <span class="hi">Falsch-negativ-Rate: 3%</span>. Groin-Rezidivrate: 2.3% (vergleichbar mit vollstÃ¤ndiger LND). Bewies die Sicherheit der Sentinel-Strategie.</p>
 <h4>GROINSS-V-II (Lancet Oncol 2021)</h4>
-<p>Sentinel-positiv → adjuvante RT inguinal (50 Gy) vs. vollständige inguinofemorale LND. <span class="hi">Gleichwertige lokale Kontrolle</span>, aber deutlich weniger Lymphödeme (25% vs. 70%). Für isolierte Sentinel-Metastase ≤2mm: RT bevorzugen.</p>
+<p>Sentinel-positiv â†’ adjuvante RT inguinal (50 Gy) vs. vollstÃ¤ndige inguinofemorale LND. <span class="hi">Gleichwertige lokale Kontrolle</span>, aber deutlich weniger LymphÃ¶deme (25% vs. 70%). FÃ¼r isolierte Sentinel-Metastase â‰¤2mm: RT bevorzugen.</p>
 <h4>Wann bilateral?</h4>
-<p>Bilateral obligat bei: Midline-Tumor (≤1cm zur Mittellinie), Klitorisbefall, bilateraler Tumorausdehnung. Ipsilateral ausreichend bei klar lateralem Tumor (&gt;1cm zur Mittellinie).</p>`);
+<p>Bilateral obligat bei: Midline-Tumor (â‰¤1cm zur Mittellinie), Klitorisbefall, bilateraler Tumorausdehnung. Ipsilateral ausreichend bei klar lateralem Tumor (&gt;1cm zur Mittellinie).</p>`);
   } else if(['IIIA','IIIB','IIIC'].includes(figo)){
-    html+=sec('surg','Vulvakarzinom FIGO III – Multimodal','🔪',
+    html+=sec('surg','Vulvakarzinom FIGO III â€“ Multimodal','ðŸ”ª',
       ['Radikale Exzision + inguinofemorale LND (bilateral)',
-       'LK-positiv: Adjuvante RT inguinal + pelvin (50 Gy) + ggf. konkomitant Cisplatin 40mg/m² wöchentlich',
-       `Kapselüberschreitung / Kapseldurchbruch: RT obligat + Cisplatin 40mg/m² wöchentlich × 5 ${ago('++')}`,
-       'Alternative: Primäre Radiochemotherapie bei ungünstiger Operabilität']);
-    html+=sec('surg','LK-Befund: pelvine LK-Entscheidung (S3 11.18, Empfgr. A)','⚠️',
-      [`pN2a (≥3 LK-Metastasen) oder pN2b (≥2 Metastasen ≥5 mm): Pelvine LK dieser Seite → operatives Staging ODER Einbeziehung in adjuvante Radio(chemo)therapie ${ago('++')}`,
-       'Große Einzelmetastase (≥10 mm) und/oder extrakapsuläres Tumorwachstum: Pelvine LK → operatives Staging oder adjuvante RT',
+       'LK-positiv: Adjuvante RT inguinal + pelvin (50 Gy) + ggf. konkomitant Cisplatin 40mg/mÂ² wÃ¶chentlich',
+       `KapselÃ¼berschreitung / Kapseldurchbruch: RT obligat + Cisplatin 40mg/mÂ² wÃ¶chentlich Ã— 5 ${ago('++')}`,
+       'Alternative: PrimÃ¤re Radiochemotherapie bei ungÃ¼nstiger OperabilitÃ¤t']);
+    html+=sec('surg','LK-Befund: pelvine LK-Entscheidung (S3 11.18, Empfgr. A)','âš ï¸',
+      [`pN2a (â‰¥3 LK-Metastasen) oder pN2b (â‰¥2 Metastasen â‰¥5 mm): Pelvine LK dieser Seite â†’ operatives Staging ODER Einbeziehung in adjuvante Radio(chemo)therapie ${ago('++')}`,
+       'GroÃŸe Einzelmetastase (â‰¥10 mm) und/oder extrakapsulÃ¤res Tumorwachstum: Pelvine LK â†’ operatives Staging oder adjuvante RT',
        'Starker Konsens (S3-Leitlinie 2024, Empfehlungsgrad A)']);
   html+=learn('vl-iii','Hintergrund: LK-positives Vulvakarzinom (FIGO III)',`
 <h4>Warum adjuvante RT nach LK-Befall?</h4>
-<p>GOG-37 (1986): LND allein vs. LND + adj. RT. Bei ≥2 LK-Metastasen oder Kapseldurchbruch: <span class="hi">signifikanter OS-Vorteil durch adj. RT</span>. Ohne RT: 51% Groin-Rezidiv bei N2+. Relative Risikoreduktion ~63%.</p>
+<p>GOG-37 (1986): LND allein vs. LND + adj. RT. Bei â‰¥2 LK-Metastasen oder Kapseldurchbruch: <span class="hi">signifikanter OS-Vorteil durch adj. RT</span>. Ohne RT: 51% Groin-Rezidiv bei N2+. Relative Risikoreduktion ~63%.</p>
 <h4>pN2a und pN2b (S3-Leitlinie 2024)</h4>
-<p>pN2a = ≥3 LK-Metastasen jeder Größe. pN2b = ≥2 Metastasen ≥5mm. Bei pN2a/b: <span class="hi">Pelvine LK in Risikofeld einbeziehen</span> (operatives Staging oder pelvine RT), da Beckenrezidivrisiko signifikant erhöht.</p>
+<p>pN2a = â‰¥3 LK-Metastasen jeder GrÃ¶ÃŸe. pN2b = â‰¥2 Metastasen â‰¥5mm. Bei pN2a/b: <span class="hi">Pelvine LK in Risikofeld einbeziehen</span> (operatives Staging oder pelvine RT), da Beckenrezidivrisiko signifikant erhÃ¶ht.</p>
 <h4>Warum konkomitantes Cisplatin?</h4>
-<p>Analog Zervixkarzinom: Cisplatin als Radiosensitizer. Beim Vulvakarzinom schwächere Datenlage, aber klinische Praxis (40mg/m² wöchentlich × 5) entspricht Zervix-Protokoll. S3-Leitlinie empfiehlt Cisplatin bei LK-Befall + RT.</p>`);
+<p>Analog Zervixkarzinom: Cisplatin als Radiosensitizer. Beim Vulvakarzinom schwÃ¤chere Datenlage, aber klinische Praxis (40mg/mÂ² wÃ¶chentlich Ã— 5) entspricht Zervix-Protokoll. S3-Leitlinie empfiehlt Cisplatin bei LK-Befall + RT.</p>`);
   } else if(['IVA','IVB'].includes(figo)){
-    html+=sec('radio','Vulvakarzinom FIGO IVA – Lokal fortgeschritten','☢️',
-      ['Primäre Radiochemotherapie (Cisplatin 40mg/m² wöchentlich + 60–64 Gy)',
-       'Exenteration bei isoliertem IVA-Befall im Einzelfall möglich (Tumorboard!)',
-       `Ziel: R0-Resektion nach neoadjuvanter RCT wenn möglich ${ago('+')}`]);
-    html+=sec('chemo','Vulvakarzinom FIGO IVB – Fernmetastasen (palliativ)','💊',
-      ['Sehr schlechte Prognose: 5-JÜR 15% (Piczlewicz 2025)',
+    html+=sec('radio','Vulvakarzinom FIGO IVA â€“ Lokal fortgeschritten','â˜¢ï¸',
+      ['PrimÃ¤re Radiochemotherapie (Cisplatin 40mg/mÂ² wÃ¶chentlich + 60â€“64 Gy)',
+       'Exenteration bei isoliertem IVA-Befall im Einzelfall mÃ¶glich (Tumorboard!)',
+       `Ziel: R0-Resektion nach neoadjuvanter RCT wenn mÃ¶glich ${ago('+')}`]);
+    html+=sec('chemo','Vulvakarzinom FIGO IVB â€“ Fernmetastasen (palliativ)','ðŸ’Š',
+      ['Sehr schlechte Prognose: 5-JÃœR 15% (Piczlewicz 2025)',
        'Chemotherapie platinbasiert: Cisplatin/Paclitaxel (Carbo+Taxol), 5-FU, Bleomycin, Methotrexat, Mitomycin',
-       'Bevacizumab in Analogie zum Zervixkarzinom erwägen',
-       `2. Linie und höher: Checkpoint-Inhibitoren – Cemiplimab (zugelassen für kutanes SCC), off-label Pembrolizumab, Nivolumab, Nivolumab/Ipilimumab (S3 16.5, Starker Konsens 2025) ${ago('+')}`,
+       'Bevacizumab in Analogie zum Zervixkarzinom erwÃ¤gen',
+       `2. Linie und hÃ¶her: Checkpoint-Inhibitoren â€“ Cemiplimab (zugelassen fÃ¼r kutanes SCC), off-label Pembrolizumab, Nivolumab, Nivolumab/Ipilimumab (S3 16.5, Starker Konsens 2025) ${ago('+')}`,
        'Ggf. Vorstellung molekulares Tumorboard (Evangelisches Klinikum Essen-Mitte)']);
   }
   html+=learn('vl-iv','Hintergrund: FIGO IV Vulvakarzinom',`
-<h4>Warum primäre RCT bei IVA?</h4>
-<p>FIGO IVA (prox. Harnröhre/Vagina oder Blasen-/Rektummukosa): Primäre Exenteration bedeutet Kontinenzverlust. Primäre RCT ermöglicht bei Ansprechen organerhaltende Resektion (Downstaging). Ziel: <span class="hi">R0-Resektion nach neoadjuvanter RCT</span>.</p>
+<h4>Warum primÃ¤re RCT bei IVA?</h4>
+<p>FIGO IVA (prox. HarnrÃ¶hre/Vagina oder Blasen-/Rektummukosa): PrimÃ¤re Exenteration bedeutet Kontinenzverlust. PrimÃ¤re RCT ermÃ¶glicht bei Ansprechen organerhaltende Resektion (Downstaging). Ziel: <span class="hi">R0-Resektion nach neoadjuvanter RCT</span>.</p>
 <h4>Checkpoint-Inhibitoren bei Vulvakarzinom IVB (S3 2025)</h4>
-<p>Daten begrenzt (seltene Entität). Cemiplimab: FDA/EMA-zugelassen für kutanes Plattenepithelkarzinom (lokal fortgeschritten/metastasiert). Off-label-Nutzung beim Vulva-SCC onkologisch plausibel – <span class="hi">gleiches Tumorbiologieprofil</span>. S3 2025 empfiehlt als Option nach Progress.</p>
+<p>Daten begrenzt (seltene EntitÃ¤t). Cemiplimab: FDA/EMA-zugelassen fÃ¼r kutanes Plattenepithelkarzinom (lokal fortgeschritten/metastasiert). Off-label-Nutzung beim Vulva-SCC onkologisch plausibel â€“ <span class="hi">gleiches Tumorbiologieprofil</span>. S3 2025 empfiehlt als Option nach Progress.</p>
 <h4>Biologische Grundlagen SCC Vulva</h4>
-<p>~90% der Vulvakarzinome sind Plattenepithelkarzinome. Zwei Entstehungswege: (1) <span class="hi">HPV-assoziiert</span> (p16+/HSIL): jüngere Frauen, bessere Prognose; (2) <span class="hi">HPV-unabhängig/dVIN</span>: ältere Frauen, Lichen sclerosus, aggressiver.</p>`);
-  html+=coll('vulva-rezidiv','🔄','Rezidiv-Management Vulvakarzinom',`
+<p>~90% der Vulvakarzinome sind Plattenepithelkarzinome. Zwei Entstehungswege: (1) <span class="hi">HPV-assoziiert</span> (p16+/HSIL): jÃ¼ngere Frauen, bessere Prognose; (2) <span class="hi">HPV-unabhÃ¤ngig/dVIN</span>: Ã¤ltere Frauen, Lichen sclerosus, aggressiver.</p>`);
+  html+=coll('vulva-rezidiv','ðŸ”„','Rezidiv-Management Vulvakarzinom',`
     <div class="rec-section radio-sec">
-      <div class="rec-title">☢️ Inguinales Rezidiv</div>
+      <div class="rec-title">â˜¢ï¸ Inguinales Rezidiv</div>
       <ul class="rec-list">
-        <li><strong>Nach inguinofemoraler LND + adj. Radio(chemo)therapie:</strong> I.d.R. palliative Situation. 5-JÜR 0–20%, medianes Überleben 9 Monate (Cormio et al., Eur J Cancer Care 2010)</li>
-        <li><strong>Nach alleiniger Sentinel-LNB:</strong> Kurative Option möglich! Bessere Prognose (Frey et al.; AGO-Studie: 50% ≥18 Mo Überleben) (S3 15.11, EK 2025)</li>
-        <li><strong>Therapie – wenn noch keine RT:</strong> Lokale Exzision + adjuvante RT oder Radiochemotherapie</li>
-        <li><strong>Therapie – nach vorheriger Radiochemotherapie:</strong> Re-Radio-(Chemo) oder alleinige Chemotherapie (platinbasiert) oder Immuntherapie</li>
+        <li><strong>Nach inguinofemoraler LND + adj. Radio(chemo)therapie:</strong> I.d.R. palliative Situation. 5-JÃœR 0â€“20%, medianes Ãœberleben 9 Monate (Cormio et al., Eur J Cancer Care 2010)</li>
+        <li><strong>Nach alleiniger Sentinel-LNB:</strong> Kurative Option mÃ¶glich! Bessere Prognose (Frey et al.; AGO-Studie: 50% â‰¥18 Mo Ãœberleben) (S3 15.11, EK 2025)</li>
+        <li><strong>Therapie â€“ wenn noch keine RT:</strong> Lokale Exzision + adjuvante RT oder Radiochemotherapie</li>
+        <li><strong>Therapie â€“ nach vorheriger Radiochemotherapie:</strong> Re-Radio-(Chemo) oder alleinige Chemotherapie (platinbasiert) oder Immuntherapie</li>
       </ul>
     </div>
     <div class="rec-section chemo-sec">
-      <div class="rec-title">💊 Lokoregionäres / Fernrezidiv</div>
+      <div class="rec-title">ðŸ’Š LokoregionÃ¤res / Fernrezidiv</div>
       <ul class="rec-list">
         <li>Platinbasierte Chemotherapie (Cisplatin/Paclitaxel, Carbo+Taxol)</li>
         <li>Ab 2. Linie: Cemiplimab, Pembrolizumab, Nivolumab (off-label) oder Nivolumab/Ipilimumab</li>
         <li>Molekulares Tumorboard bei Progress unter Standardtherapie</li>
       </ul>
     </div>`);
-  html+=coll('vulva-imaging','🔍','Bildgebung beim Vulvakarzinom (Piczlewicz 2025)',`
+  html+=coll('vulva-imaging','ðŸ”','Bildgebung beim Vulvakarzinom (Piczlewicz 2025)',`
     <div class="rec-section surg-sec">
       <div class="rec-title">CT</div>
       <ul class="rec-list">
         <li><strong>pT1a (&lt;1mm Invasion, &lt;2cm):</strong> Keine Bildgebung erforderlich (da keine LND indiziert)</li>
-        <li><strong>Tumoren &gt;2cm oder Infiltration von Urethra, Vagina, Anus:</strong> CT gibt wichtige Zusatzinfos zur lokalen Ausdehnung und ggf. Multizentrizität</li>
+        <li><strong>Tumoren &gt;2cm oder Infiltration von Urethra, Vagina, Anus:</strong> CT gibt wichtige Zusatzinfos zur lokalen Ausdehnung und ggf. MultizentrizitÃ¤t</li>
       </ul>
     </div>
     <div class="rec-section surg-sec">
       <div class="rec-title">MRT</div>
       <ul class="rec-list">
         <li><strong>Ab FIGO II empfohlen</strong> (LL 2015): MRT Becken wegen exzellentem Weichteilkontrast zur Darstellung des lokalen Tumorgeschehens und Befall von UVR</li>
-        <li>MRT hat bereits bei befallenen LK von 5mm bessere Sensitivität als Sonographie</li>
+        <li>MRT hat bereits bei befallenen LK von 5mm bessere SensitivitÃ¤t als Sonographie</li>
       </ul>
     </div>`);
-  html+=coll('vulva-rt','☢️','Indikationen zur Bestrahlung (Piczlewicz 2025)',`
+  html+=coll('vulva-rt','â˜¢ï¸','Indikationen zur Bestrahlung (Piczlewicz 2025)',`
     <div class="rec-section radio-sec">
       <div class="rec-title">Adjuvante RT nach OP</div>
       <ul class="rec-list">
-        <li>≥1 befallener Lymphknoten</li>
-        <li>Extranodale Ausbreitung / Kapselüberschreitung</li>
-        <li>R1-Resektion, wenn Nachresektion nicht möglich</li>
+        <li>â‰¥1 befallener Lymphknoten</li>
+        <li>Extranodale Ausbreitung / KapselÃ¼berschreitung</li>
+        <li>R1-Resektion, wenn Nachresektion nicht mÃ¶glich</li>
         <li>Lymphangiosis carcinomatosa</li>
         <li>Infiltration von Urethra, Anus oder Klitoris mit nicht ausreichendem Resektionsrand</li>
       </ul>
@@ -1246,52 +1245,52 @@ function recVulva(){
     <div class="rec-section radio-sec">
       <div class="rec-title">Definitive Radiotherapie</div>
       <ul class="rec-list">
-        <li>Inoperabler Primärtumor (lokal fortgeschritten)</li>
-        <li>Multimorbidität oder Ablehnung der Operation</li>
+        <li>Inoperabler PrimÃ¤rtumor (lokal fortgeschritten)</li>
+        <li>MultimorbiditÃ¤t oder Ablehnung der Operation</li>
       </ul>
     </div>
     <div class="rec-section radio-sec">
       <div class="rec-title">Neoadjuvante Radiochemotherapie</div>
       <ul class="rec-list">
         <li>Tumorverkleinerung vor geplanter OP bei ausgedehntem Befall</li>
-        <li><em>Individuelle Nutzen-Risiko-Abwägung essenziell, v.a. bei älteren / gebrechlichen Patientinnen</em></li>
+        <li><em>Individuelle Nutzen-Risiko-AbwÃ¤gung essenziell, v.a. bei Ã¤lteren / gebrechlichen Patientinnen</em></li>
       </ul>
     </div>`);
-  html+=coll('vulva-vin','🔬','VIN-Vorläuferläsionen – Übersicht (Piczlewicz)',`
+  html+=coll('vulva-vin','ðŸ”¬','VIN-VorlÃ¤uferlÃ¤sionen â€“ Ãœbersicht (Piczlewicz)',`
     <div class="rec-section endo-sec">
-      <div class="rec-title">dVIN (Differenzierte VIN) – 2–10%</div>
+      <div class="rec-title">dVIN (Differenzierte VIN) â€“ 2â€“10%</div>
       <ul class="rec-list">
-        <li>Meist ältere Patientinnen, <strong>HPV-negativ</strong>, p53-Mutation</li>
+        <li>Meist Ã¤ltere Patientinnen, <strong>HPV-negativ</strong>, p53-Mutation</li>
         <li>Risiken: Chronische Vulvaerkrankungen, Lichen sclerosus, Lichen ruber</li>
-        <li><strong>Hohes Progressionsrisiko</strong> – oft bereits differenziertes Plattenepithelkarzinom bei Diagnose</li>
+        <li><strong>Hohes Progressionsrisiko</strong> â€“ oft bereits differenziertes Plattenepithelkarzinom bei Diagnose</li>
       </ul>
     </div>
     <div class="rec-section radio-sec">
-      <div class="rec-title">HSIL / uVIN (Klassische VIN II–III) – 90% Zunahme!</div>
+      <div class="rec-title">HSIL / uVIN (Klassische VIN IIâ€“III) â€“ 90% Zunahme!</div>
       <ul class="rec-list">
-        <li>Auch jüngere Patientinnen; M. Bowen, DQ</li>
+        <li>Auch jÃ¼ngere Patientinnen; M. Bowen, DQ</li>
         <li>Risiken: <strong>HR-HPV (Typ 16)</strong> positiv, Rauchen, mehrere Partner, Immunsuppression</li>
         <li>Nur 50% symptomatisch (Pruritus, Brennen)</li>
-        <li>6–7% Progression zu unverhorntem Plattenepithelkarzinom</li>
+        <li>6â€“7% Progression zu unverhorntem Plattenepithelkarzinom</li>
       </ul>
     </div>
     <div class="rec-section surg-sec">
       <div class="rec-title">LSIL (VIN I) &amp; Vordere Kommissur</div>
       <ul class="rec-list">
-        <li>LSIL: VIN I, Condylome, HPV-LR – fakultative Präkanzerose, hohe Regressionsrate</li>
-        <li><strong>Vordere Kommissur:</strong> Steigende Zahl, jüngere Patientinnen, Ursache unklar, nur z.T. HPV-HR positiv</li>
+        <li>LSIL: VIN I, Condylome, HPV-LR â€“ fakultative PrÃ¤kanzerose, hohe Regressionsrate</li>
+        <li><strong>Vordere Kommissur:</strong> Steigende Zahl, jÃ¼ngere Patientinnen, Ursache unklar, nur z.T. HPV-HR positiv</li>
       </ul>
     </div>`);
-  html+=sec('surg','Allgemeine operative Prinzipien Vulva','ℹ️',
-    ['Klitoriserhalt wenn onkologisch vertretbar (Lebensqualität!)',
-     'HPV-assoziiert (p16+/HSIL): Bessere Prognose, jüngere Patientinnen',
-     'dVIN-assoziiert (HPV-negativ, LS/LR): Feld-Defekt, höheres Rezidivrisiko – Nachsorge intensivieren',
-     'Plastisch-rekonstruktive Eingriffe früh planen (Lebensqualität)',
+  html+=sec('surg','Allgemeine operative Prinzipien Vulva','â„¹ï¸',
+    ['Klitoriserhalt wenn onkologisch vertretbar (LebensqualitÃ¤t!)',
+     'HPV-assoziiert (p16+/HSIL): Bessere Prognose, jÃ¼ngere Patientinnen',
+     'dVIN-assoziiert (HPV-negativ, LS/LR): Feld-Defekt, hÃ¶heres Rezidivrisiko â€“ Nachsorge intensivieren',
+     'Plastisch-rekonstruktive Eingriffe frÃ¼h planen (LebensqualitÃ¤t)',
      'Psychoonkologische Mitbetreuung obligat empfohlen']);
   return html;
 }
 
-// ── THEME & INIT ──────────────────────────────────────────────────────────────
+// â”€â”€ THEME & INIT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let currentTheme=null;
 function toggleTheme(){
   const root=document.documentElement;
@@ -1303,7 +1302,7 @@ function dismissDisclaimer(){
   const ov=document.getElementById('disc-overlay');
   if(ov)ov.style.display='none';
 }
-// Init – direkt aufrufen (alle Elemente über dem Script-Tag sind bereits geparst)
+// Init â€“ direkt aufrufen (alle Elemente Ã¼ber dem Script-Tag sind bereits geparst)
 (function init(){
   try{
     if(localStorage.getItem('kem-disc-v3')==='1'){
